@@ -1,8 +1,12 @@
+import { useEffect } from "react"
 import Main from "../../layouts/Main";
 import Title from "../../components/Title";
 import TabItem from "./Tabs";
 
 export default function ProjectsIndex() {
+  useEffect(function() {
+    document.title = 'Projects | Elvira Firmansyah';
+  }, []);
   return (
     <>
     <Main>

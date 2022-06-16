@@ -43,7 +43,7 @@ export default function Home() {
     }
   ]
   useEffect(function() {
-    document.title = 'Home';
+    document.title = 'Elvira Firmansyah | Portfolio';
   }, []);
 
   return (
