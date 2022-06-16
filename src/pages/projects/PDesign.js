@@ -40,7 +40,7 @@ export default function DesignProjects() {
               noOfLines={1}
               fontSize={"20px"}
             >
-              {project.name}
+              {project.name + " Design"}
             </Box>
             <Box>{project.tagline}</Box>
             <Box pt={2}>

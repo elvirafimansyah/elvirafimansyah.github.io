@@ -6,7 +6,7 @@ const projectsList = [
     url: 'https://kovidapp.netlify.app/',
     category: "web development",
     type: "JavaScript",
-    img: "https://raw.githubusercontent.com/elvirafimansyah/elvirafimansyah.github.io/master/public/img/covid.png"
+    img: process.env.PUBLIC_URL + 'assets/img/covid.png'
   },
   {
     name: 'Weather App',
@@ -15,7 +15,7 @@ const projectsList = [
     url: 'https://apweather.vercel.app/',
     category: "web development",
     type: "JavaScript",
-    img: "https://raw.githubusercontent.com/elvirafimansyah/elvirafimansyah.github.io/master/public/img/weather.png"
+    img: process.env.PUBLIC_URL + 'assets/img/weather.png'
   },
   {
     name: 'News ID',
@@ -33,7 +33,7 @@ const projectsList = [
     url: 'https://elvira.elvinaf.xyz/',
     category: "web development",
     type: "HTML",
-    img: "https://raw.githubusercontent.com/elvirafimansyah/elvirafimansyah.github.io/master/public/img/pt.png"
+    img: process.env.PUBLIC_URL + 'assets/img/pt.png'
   },
   {
     name: 'Engxzu',

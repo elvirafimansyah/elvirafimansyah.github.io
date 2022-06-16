@@ -63,7 +63,7 @@ export default function Dev() {
               noOfLines={1}
               fontSize={"20px"}
             >
-              {project.name + " Design"}  
+              {project.name }  
             </Box>
             <Box>{project.tagline}</Box>
             <Box display='flex' alignItems='center' py={2} >
