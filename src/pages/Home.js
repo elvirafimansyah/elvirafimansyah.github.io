@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
+import { Link }  from "react-router-dom"
 import { 
   Flex, 
   Image, 
@@ -119,17 +120,17 @@ export default function Home() {
             >
               <Button border='1px' borderColor={useColorModeValue("green.400",'green.300')} color={useColorModeValue("green.400","green.300")} bg="transparent" _hover={{bg: useColorModeValue("green.50", "whiteAlpha.100")}}>Resume</Button>
             </a>
-            <a
-              href={'/about'}
-              rel="noreferrer"
-            >
+            
               <Button colorScheme="gray" display="flex" alignItems={"center"}  > 
+                <Link
+                  to="about"
+                >
                 More Details &nbsp;
+                </Link>
                 <Box>
                   <i class="fa-solid fa-arrow-right"></i>
                 </Box>
               </Button>
-            </a>
           </Stack>
         </Stack>
         <Image 

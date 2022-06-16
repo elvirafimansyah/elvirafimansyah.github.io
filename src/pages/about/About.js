@@ -1,6 +1,5 @@
 import { useEffect } from "react";
-import Main from "../../layouts/Main";
-import Skills from "./Skills";
+import { Link }  from "react-router-dom"
 import {
   chakra,
   Heading,
@@ -14,6 +13,9 @@ import {
   Button,
   HStack
 } from '@chakra-ui/react'
+
+import Skills from "./Skills";
+import Main from "../../layouts/Main";
 
 const Span = ({...props}) => {
   return(
@@ -74,7 +76,7 @@ export default function About() {
                 >
                   <Button color="green.400" px="6" variant="outline">View CV</Button>
                 </a>
-                <a href="contact">
+                <Link to="/contact">
                   <Button bg={"green.400"} color="white"variant="solid" _hover={{bg: "green.500"}}
                     display="flex" alignItems="center"
                   >
@@ -83,7 +85,7 @@ export default function About() {
                     </Box> &nbsp;
                     Contact Me 
                   </Button>
-                </a>
+                </Link>
               </HStack>
             </Stack>
             

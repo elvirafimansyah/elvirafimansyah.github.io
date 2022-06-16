@@ -1,4 +1,4 @@
-import './lib/index.css'
+import './style/index.css'
 import { Routes, Route } from 'react-router-dom';
 import NavBar from './pages/nav/Navbar'
 import Home from './pages/Home';
@@ -13,10 +13,10 @@ function App() {
       <NavBar />
       <Routes >
         <Route path='/' element={<Home />}/>
-        <Route path="about" element={<About />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="blog" element={<Blog />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </>
