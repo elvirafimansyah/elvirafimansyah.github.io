@@ -18,7 +18,6 @@ import Contact from './Contact';
 import { ProjectContent } from './projects/Project';
 import NavBar from './nav/Navbar';
 
-
 export default function Home() {
   const infoLinks = [
     {

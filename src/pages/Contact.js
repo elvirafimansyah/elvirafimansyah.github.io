@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Main from "../layouts/Main";
 import Title from "../components/Title";
 import {
@@ -12,7 +13,10 @@ import {
 
 import Forms from "../components/Form";
 
-const Contact = (props) => {
+const Contact = () => {
+  useEffect(function() {
+    document.title = 'Contact | Elvira Firmansyah';
+  }, []);
   return(
     <Main>
       <Title

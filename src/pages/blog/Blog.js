@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Main from "../../layouts/Main";
 import Title from "../../components/Title";
 import {
@@ -8,6 +9,9 @@ import {
 } from "@chakra-ui/react"
 
 export default function Blog() {
+  useEffect(function() {
+    document.title = 'Blog | Elvira Firmansyah';
+  }, []);
   return (
     <> 
     <Main >
