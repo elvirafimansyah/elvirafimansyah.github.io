@@ -21,7 +21,7 @@
 </div>
 
 <!-- ABOUT THE PROJECT -->
-<img src="./public/assets/doc/banner.png" alt="Logo" >
+<img src="./public/assets/img/banner.png" alt="Logo" >
 
 ### Built With
 
