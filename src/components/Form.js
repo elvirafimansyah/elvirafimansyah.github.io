@@ -49,7 +49,7 @@ const Forms = () => {
     <>
     <form ref={formRef} name='contact-my-website' onSubmit={handleSubmit}>
       <VStack w="full" h="full" pl={["0", "0", '5']} alignItems="flex-start" mb="20">
-        <SimpleGrid columns={1} columnGap={3} rowGap={6} w="full">
+        <SimpleGrid columns={2} columnGap={3} rowGap={6} w="full">
           <GridItem colSpan={1}>
             <FormControl>
               <FormLabel>First Name</FormLabel>
