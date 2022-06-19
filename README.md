@@ -21,8 +21,7 @@
 </div>
 
 <!-- ABOUT THE PROJECT -->
-<img src="public/assets/img/banner.jpg" alt="Logo" >
-
+<img src="./public/assets/doc/banner.png" alt="Logo" >
 
 ### Built With
 
@@ -31,9 +30,8 @@
 * [Google Fonts](https://fonts.google.com)
 * [Font Awesome](https://fontawesome.com/)
 * [Github Pages](https://pages.github.com)
+* [Vercel](https://vercel.com/)
 
-
-<p align="right"><a href="#top">🔝</a></p>
 
 ### Running Locally
 1. Clone the repo
@@ -49,14 +47,11 @@
    ```
 3. Navigate to http://localhost:3000.
 
-<p align="right"><a href="#top">🔝</a></p>
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See [MIT LICENSE](LICENSE) for more information.
-
-<p align="right"><a href="#top">🔝</a></p>
 
 
 <!-- CONTACT -->

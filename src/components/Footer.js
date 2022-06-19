@@ -55,7 +55,7 @@ export default function Footer() {
       >
         <Stack direction={'row'} spacing={6} alignItems={"center"} >
           <a
-            href="https://github.com/elvirafimansyah"
+            href="https://github.com/elvirafimansyah/elvirafimansyah.github.io"
             target="blank"
 
           >
