@@ -56,18 +56,18 @@ const Design = [
   },
   {
     name: 'Form Login User',
-    tagline: 'Engxzu is an online learning application ',
+    tagline: 'Hello is an online learning application ',
     url: 'https://engxzu.netlify.app/',
     category: "ui/ux design",
     img: "https://cdn.dribbble.com/users/8694043/screenshots/16323513/media/80c638bb7ac335bc61a6764441b38662.png"
   },
   {
     name: `Rubik's Cube`,
-    tagline: 'Engxzu is an online learning application ',
+    tagline: 'Anyong is an online learning application ',
     url: 'https://engxzu.netlify.app/',
     category: "ui/ux design",
     img: "https://cdn.dribbble.com/users/8694043/screenshots/17971881/media/d6200e08249fa599635b1ac495042c77.png"
   }
 ]
 
-export {projectsList, Design} ;
+export { projectsList, Design };

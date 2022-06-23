@@ -3,7 +3,7 @@ import DesignProjects from "./PDesign"
 
 import { Box } from "@chakra-ui/react"
 
-export default function AllProjects(){
+export default function AllProjects() {
   return (
     <Box>
       <Dev />

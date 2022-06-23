@@ -7,13 +7,12 @@ import Projects from './pages/projects/Project';
 import Blog from './pages/blog/Blog';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
-
 function App() {
-  return (  
+  return (
     <>
       <NavBar />
       <Routes >
-        <Route exact path='/' element={<Home />}/>
+        <Route exact path='/' element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/blog" element={<Blog />} />
