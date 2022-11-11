@@ -15,7 +15,7 @@ const projectsList = [
     url: 'https://apweather.vercel.app/',
     category: "web development",
     type: "JavaScript",
-    img: process.env.PUBLIC_URL + 'assets/img/weather.png'
+    img: process.env.PUBLIC_URL + 'assets/img/dashboard.png'
   },
   {
     name: 'News ID',
@@ -36,9 +36,18 @@ const projectsList = [
     img: process.env.PUBLIC_URL + 'assets/img/pt.png'
   },
   {
+    name: 'Quiz Emore',
+    slug: 'quiz-app',
+    tagline: 'The quiz game bulit with vannila javascript',
+    url: 'https://quizemore.vercel.app/',
+    category: "web development",
+    type: "HTML",
+    img: process.env.PUBLIC_URL + 'assets/img/quiz.png'
+  },
+  {
     name: 'Engxzu',
     slug: 'Engxzu_',
-    tagline: 'Engxzu is an online learning application ',
+    tagline: 'Engxzu is an online learning english application ',
     url: 'https://engxzu.netlify.app/',
     category: "web development",
     type: "HTML",

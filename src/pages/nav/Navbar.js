@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Box, Flex, Stack, useColorModeValue } from "@chakra-ui/react";
-import { Link }  from "react-router-dom"
+import { Link } from "react-router-dom"
 import DarkModeToggle from "./DarkMode";
 import Logo from './Logo'
 
@@ -17,15 +17,15 @@ const NavBar = (props) => {
   return (
     <NavBarContainer {...props} >
       <Container maxW="container.lg" alignItems="center" zIndex={10}>
-        <Flex 
+        <Flex
           justify="space-between"
-          alignItems={["none","center"]}
+          alignItems={["none", "center"]}
         >
           <Logo
             width="100px"
             display={isOpen ? "none" : "block"}
           />
-          <MenuLinks isOpen={isOpen} onClick={() => closeMenu()}/>
+          <MenuLinks isOpen={isOpen} onClick={() => closeMenu()} />
           <MenuToggle toggle={toggle} isOpen={isOpen} />
         </Flex>
       </Container>
@@ -63,7 +63,7 @@ const MenuToggle = ({ toggle, isOpen }) => {
   );
 };
 
-const MenuLinks = ({ isOpen, ...props }) => { 
+const MenuLinks = ({ isOpen, ...props }) => {
   return (
     <Box
       display={{ base: isOpen ? "block" : "none", md: "block" }}
@@ -74,43 +74,43 @@ const MenuLinks = ({ isOpen, ...props }) => {
         align="center"
         justify={["center", "space-between", "flex-end", "flex-end"]}
         direction={["column", "row", "row", "row"]}
-        pt={[6,6, 0, 0]}
+        pt={[6, 6, 0, 0]}
         color={useColorModeValue('black', "white")}
       >
-        <Box 
-          _hover={useColorModeValue({ bg: "gray.100" }, {bg: "whiteAlpha.200"})}
+        <Box
+          _hover={useColorModeValue({ bg: "gray.100" }, { bg: "whiteAlpha.200" })}
           px={4}
           py={2}
           rounded="md"
         >
           <Link to="/" {...props}> Home</Link>
         </Box>
-        <Box 
-          _hover={useColorModeValue({ bg: "gray.100" }, {bg: "whiteAlpha.200"})}
+        <Box
+          _hover={useColorModeValue({ bg: "gray.100" }, { bg: "whiteAlpha.200" })}
           px={4}
           py={2}
           rounded="md"
         >
           <Link to="about" {...props}>About</Link>
         </Box>
-        <Box 
-          _hover={useColorModeValue({ bg: "gray.100" }, {bg: "whiteAlpha.200"})}
+        <Box
+          _hover={useColorModeValue({ bg: "gray.100" }, { bg: "whiteAlpha.200" })}
           px={4}
           py={2}
           rounded="md"
         >
           <Link to="projects" {...props}>Projects</Link>
         </Box>
-        <Box 
-          _hover={useColorModeValue({ bg: "gray.100" }, {bg: "whiteAlpha.200"})}
+        <Box
+          _hover={useColorModeValue({ bg: "gray.100" }, { bg: "whiteAlpha.200" })}
           px={4}
           py={2}
           rounded="md"
         >
           <Link to="blog" {...props}>Blog</Link>
         </Box>
-        <Box 
-          _hover={useColorModeValue({ bg: "gray.100" }, {bg: "whiteAlpha.200"})}
+        <Box
+          _hover={useColorModeValue({ bg: "gray.100" }, { bg: "whiteAlpha.200" })}
           px={4}
           py={2}
           rounded="md"
@@ -127,7 +127,7 @@ const NavBarContainer = ({ children, ...props }) => {
   return (
     <Flex
       as="nav"
-      align="center" 
+      align="center"
       justify="space-between"
       w="100%"
       mb={8}
