@@ -45,6 +45,15 @@ const projectsList = [
     img: process.env.PUBLIC_URL + 'assets/img/quiz.png'
   },
   {
+    name: 'Emore Notes',
+    slug: 'notes-app',
+    tagline: '📝 Emore Notes is the best place to jot down quick thoughts.',
+    url: 'https://quizemore.vercel.app/',
+    category: "web development",
+    type: "HTML",
+    img: process.env.PUBLIC_URL + 'assets/img/notes.png'
+  },
+  {
     name: 'Engxzu',
     slug: 'Engxzu_',
     tagline: 'Engxzu is an online learning english application ',
