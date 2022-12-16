@@ -48,7 +48,7 @@ const projectsList = [
     name: 'Emore Notes',
     slug: 'notes-app',
     tagline: '📝 Emore Notes is the best place to jot down quick thoughts.',
-    url: 'https://quizemore.vercel.app/',
+    url: 'http://emorenotes.vercel.app/',
     category: "web development",
     type: "HTML",
     img: process.env.PUBLIC_URL + 'assets/img/notes.png'
