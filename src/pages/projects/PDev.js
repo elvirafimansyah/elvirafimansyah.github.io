@@ -98,7 +98,7 @@ export default function Dev() {
                     target="blank"
                     href={`https://github.com/elvirafimansyah/${project.slug}`}
                   >
-                    <Button colorScheme="gray"><i class="fa-brands fa-github"></i>&nbsp; Github</Button>
+                    <Button bg="#F1F2F6" _dark={{bg: "whiteAlpha.200"}} ><i class="fa-brands fa-github"></i>&nbsp; Github</Button>
                   </a>
                   <a
                     target="blank"

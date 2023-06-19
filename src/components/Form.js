@@ -51,33 +51,33 @@ const Forms = () => {
         <VStack w="full" h="full" pl={["0", "0", '5']} alignItems="flex-start" mb="20">
           <SimpleGrid columns={2} columnGap={3} rowGap={6} w="full">
             <GridItem colSpan={1}>
-              <FormControl>
+              <FormControl >
                 <FormLabel>First Name</FormLabel>
-                <Input variant='filled' type="text" placeholder="Elvira" name="nama" required />
+                <Input variant="filled" focusBorderColor='green.400' type="text" placeholder="Elvira" name="nama" required  />
               </FormControl>
             </GridItem>
             <GridItem colSpan={1}>
               <FormControl>
                 <FormLabel>Last Name</FormLabel>
-                <Input variant='filled' type="text" placeholder="Firmansyah" name="last_name" required />
+                <Input variant='filled' focusBorderColor='green.400' type="text" placeholder="Firmansyah" name="last_name" required />
               </FormControl>
             </GridItem>
             <GridItem colSpan={2}>
               <FormControl>
                 <FormLabel>Email</FormLabel>
-                <Input variant='filled' type="email" placeholder="hello@gmail.com" name="email" required />
+                <Input variant='filled' focusBorderColor='green.400' type="email" placeholder="hello@gmail.com" name="email" required />
               </FormControl>
             </GridItem>
             <GridItem colSpan={2}>
               <FormLabel>Messages</FormLabel>
-              <Textarea variant='filled' name="pesan" placeholder='Your Messages' required />
+              <Textarea variant='filled'focusBorderColor='green.400' name="pesan" placeholder='Your Messages' required />
             </GridItem>
             <GridItem colSpan={2}>
               {
                 loading ?
                   <Button isLoading loadingText='Loading...' color="green.400" variant='outline' spinnerPlacement='start' w="full" size="lg" _hover={{ bg: "whiteAlpha.200", cursor: "default" }}>Submit</Button>
                   :
-                  <Button size="lg" bgColor={"green.400"} w="full" color="white" type="submit" _hover={{ bg: "green.500" }}> Send Messages</Button>
+                  <Button size="lg" fontSize="sm" bgColor={"green.400"} w="full" color="white" type="submit" _hover={{ bg: "green.500" }}> Send Messages &nbsp;<i class="fa-solid fa-paper-plane"></i></Button>
               }
             </GridItem>
           </SimpleGrid>

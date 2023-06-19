@@ -88,7 +88,7 @@ export default function Footer() {
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}
       >
-        <Text>© 2022 Elvira Firmansyah. All rights reserved</Text>
+        <Text>© 2023 Elvira Firmansyah. All rights reserved</Text>
         <Stack direction={'row'} spacing={3}>
           <SocialButton label={'Github'} href={'https://github.com/elvirafimansyah'}>
             <i class="fa-brands fa-github"></i>

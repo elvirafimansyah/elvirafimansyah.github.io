@@ -58,7 +58,7 @@ export default function DesignProjects() {
                   target="blank"
                   href={project.html_url}
                 >
-                  <Button colorScheme="gray" pos="absolute" bottom="6"><i class="fa-brands fa-dribbble"></i>&nbsp; Dribbble</Button>
+                  <Button bg="#F1F2F6" _dark={{bg: "whiteAlpha.200"}} pos="absolute" bottom="6"><i class="fa-brands fa-dribbble"></i>&nbsp; Dribbble</Button>
                 </a>
               </Box>
             </Box>

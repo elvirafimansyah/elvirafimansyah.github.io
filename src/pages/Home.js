@@ -119,7 +119,7 @@ export default function Home() {
                 <Button border='1px' borderColor={useColorModeValue("green.400", 'green.300')} color={useColorModeValue("green.400", "green.300")} bg="transparent" _hover={{ bg: useColorModeValue("green.50", "whiteAlpha.100") }}>Resume</Button>
               </a>
 
-              <Button colorScheme="gray" display="flex" alignItems={"center"}  >
+              <Button bg={useColorModeValue('#F1F2F6', "whiteAlpha.200")} display="flex" alignItems={"center"}  >
                 <Link
                   to="about"
                 >

@@ -21,22 +21,22 @@ export default function Blog() {
       />
       <Divider />
       <VStack spacing="5" py="5" mb={["20"]}>
-        <Box bg={useColorModeValue("gray.100",'whiteAlpha.200')} w='100%' p={3}  rounded="sm">
+        <Box bg={useColorModeValue("#F1F2F6",'whiteAlpha.200')} w='100%' p={3}  rounded="sm">
           No Content Here!
         </Box>
-        <Box bg={useColorModeValue("gray.100",'whiteAlpha.200')} w='100%' p={3}  rounded="sm">
+        <Box bg={useColorModeValue("#F1F2F6",'whiteAlpha.200')} w='100%' p={3}  rounded="sm">
           No Content Here!
         </Box>
-        <Box bg={useColorModeValue("gray.100",'whiteAlpha.200')} w='100%' p={3}  rounded="sm">
+        <Box bg={useColorModeValue("#F1F2F6",'whiteAlpha.200')} w='100%' p={3}  rounded="sm">
           No Content Here!
         </Box>
-        <Box bg={useColorModeValue("gray.100",'whiteAlpha.200')} w='100%' p={3}  rounded="sm">
+        <Box bg={useColorModeValue("#F1F2F6",'whiteAlpha.200')} w='100%' p={3}  rounded="sm">
           No Content Here!
         </Box>
-        <Box bg={useColorModeValue("gray.100",'whiteAlpha.200')} w='100%' p={3}  rounded="sm">
+        <Box bg={useColorModeValue("#F1F2F6",'whiteAlpha.200')} w='100%' p={3}  rounded="sm">
           No Content Here!
         </Box>
-        <Box bg={useColorModeValue("gray.100",'whiteAlpha.200')} w='100%' p={3}  rounded="sm">
+        <Box bg={useColorModeValue("#F1F2F6",'whiteAlpha.200')} w='100%' p={3}  rounded="sm">
           No Content Here!
         </Box>
       </VStack>

@@ -12,8 +12,10 @@ export default function ProjectsIndex() {
       <Main>
         <Title
           title="Projects"
-          url="https://dribbble.com/ElviraFir"
-          status="Github"
+          url1="https://github.com/elvirafimansyah"
+          url2="https://dribbble.com/ElviraFir"
+          status1="Github"
+          status2="Dribbble"
           dp="A few highlights of my open-source projects. View them all on"
         />
         <TabItem mb={"20"} />
@@ -27,8 +29,8 @@ const ProjectContent = () => {
     <>
       <Title
         title="Projects"
-        url="https://dribbble.com/ElviraFir"
-        status="Github"
+        url="https://github.com/elvirafimansyah"
+        status="Dribbble"
         dp="A few highlights of my open-source projects. View them all on"
       />
       <TabItem mb={["0", "20"]} />

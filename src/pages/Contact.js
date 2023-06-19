@@ -8,7 +8,6 @@ import {
   Box,
   useColorModeValue,
   Text,
-  Button,
 } from "@chakra-ui/react"
 
 import Forms from "../components/Form";
@@ -47,26 +46,9 @@ const Contact = () => {
               </VStack>
 
               <Box py={{ base: 5, sm: 5, md: 8, lg: 5 }}>
-                <VStack pl={0} spacing={3} alignItems={"flex-start"}>
-                  <Button
-                    size="md"
-                    height="48px"
-                    variant="ghost"
-                    color={useColorModeValue("gray.700", "#DCE2FF")}
-                    leftIcon={<i class="fa-solid fa-envelope fa-lg"></i>}
-                    _hover={{ border: '2px solid', borderColor: "green.300" }}
-                  >
-                    freddyfirmansyah25@gmail.com
-                  </Button>
-                  <Button
-                    size="md"
-                    height="48px"
-                    variant="ghost"
-                    _hover={{ border: '2px solid', borderColor: "green.300" }}
-                    color={useColorModeValue("gray.700", "#DCE2FF")}
-                    leftIcon={<i class="fa-solid fa-location-dot fa-lg"></i>}>
-                    Palembang, Indonesia
-                  </Button>
+                <VStack pl={0} spacing={6} alignItems={"flex-start"}>
+                  <Text fontSize="md"  color={useColorModeValue("gray.800", "white")} ><i className="fa-solid fa-envelope fa-lg"></i>&nbsp; freddyfirmansyah25@gmail.com</Text>
+                  <Text fontSize="md"  color={useColorModeValue("gray.800", "white")} ><i className="fa-solid fa-location-dot fa-lg"></i>&nbsp; Palembang, Indonesia</Text>
                 </VStack>
               </Box>
             </VStack>

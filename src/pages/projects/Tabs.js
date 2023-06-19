@@ -21,32 +21,29 @@ const TabItem = ({ ...props }) => {
           <TabList >
             <Stack direction="row" pb="5" spacing={3} >
               <Tab
-                _selected={{ color: 'white', bg: "green.400" }}
-                bg={useColorModeValue('gray.100', "whiteAlpha.200")}
-                rounded="md"
-                _hover={{ border: "1px", borderColor: "green.400" }}
-                border="1px"
-                borderColor={useColorModeValue('gray.300', "whiteAlpha.200")}
+                _selected={{ color: 'white', bg: "green.400", }}
+                bg={useColorModeValue('#F1F2F6', "whiteAlpha.200")}
+                rounded="lg"
+                _focus={{ boxShadow: "none"}}
+                fontSize="14px"
               >
                 All
               </Tab>
               <Tab
                 _selected={{ color: 'white', bg: "green.400" }}
-                bg={useColorModeValue('gray.100', "whiteAlpha.200")}
-                rounded="md"
-                _hover={{ border: "1px", borderColor: "green.400" }}
-                border="1px"
-                borderColor={useColorModeValue('gray.300', "whiteAlpha.200")}
+                bg={useColorModeValue('#F1F2F6', "whiteAlpha.200")}
+                rounded="lg"
+                _focus={{ boxShadow: "none", outline: "none" }}
+                fontSize="14px"
               >
                 Dev
               </Tab>
               <Tab
                 _selected={{ color: 'white', bg: "green.400" }}
-                rounded="md"
-                bg={useColorModeValue('gray.100', "whiteAlpha.200")}
-                _hover={{ border: "1px", borderColor: "green.400" }}
-                border="1px"
-                borderColor={useColorModeValue('gray.300', "whiteAlpha.200")}
+                rounded="lg"
+                bg={useColorModeValue('#F1F2F6', "whiteAlpha.200")}
+                _focus={{ boxShadow: "none", outline: "none" }}
+                fontSize="14px"
               >
                 Designs
               </Tab>
