@@ -98,13 +98,13 @@ export default function Dev() {
                     target="blank"
                     href={`https://github.com/elvirafimansyah/${project.slug}`}
                   >
-                    <Button bg="#F1F2F6" _dark={{bg: "whiteAlpha.200"}} rounded="lg" ><i class="fa-brands fa-github"></i>&nbsp; Github</Button>
+                    <Button bg="#F1F2F6" _dark={{bg: "whiteAlpha.200"}} rounded="lg" _focus={{boxShadow: "none"}} ><i class="fa-brands fa-github"></i>&nbsp; Github</Button>
                   </a>
                   <a
                     target="blank"
                     href={project.url}
                   >
-                    <Button color={"white"} bg="green.400" _hover={{ bg: "green.500" }} rounded="lg">Demo &nbsp; <i class="fa-solid fa-up-right-from-square"></i></Button>
+                    <Button color={"white"} bg="green.400" _hover={{ bg: "green.500" }} _focus={{ boxShadow: "none" }} rounded="lg">Demo &nbsp; <i class="fa-solid fa-up-right-from-square"></i></Button>
                   </a>
 
                 </Stack>

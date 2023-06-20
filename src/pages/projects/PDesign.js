@@ -58,7 +58,7 @@ export default function DesignProjects() {
                   target="blank"
                   href={project.html_url}
                 >
-                  <Button bg="green.400" _hover={{bg: "green.500"}} color="white" pos="absolute" bottom="6"><i class="fa-brands fa-dribbble"></i>&nbsp; Dribbble</Button>
+                  <Button bg="green.400" _hover={{bg: "green.500"}} color="white" _focus={{boxShadow: "none"}} pos="absolute" bottom="6"><i class="fa-brands fa-dribbble"></i>&nbsp; Dribbble</Button>
                 </a>
               </Box>
             </Box>

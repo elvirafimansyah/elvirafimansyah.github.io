@@ -134,7 +134,7 @@ const NavBarContainer = ({ children, ...props }) => {
       py={4}
       bg={useColorModeValue('white', 'gray.800')}
       color={"white"}
-      borderBottom='1px' borderColor='gray'
+      borderBottom='1px' borderColor={useColorModeValue("#F1F2F6",'whiteAlpha.100')}
       pos="fixed"
       zIndex={10}
       {...props}
