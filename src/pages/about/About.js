@@ -74,11 +74,11 @@ export default function About() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <Button color="green.400" px="6" variant="outline">View CV</Button>
+                <Button border="1px" borderColor={useColorModeValue("gray.200", "whiteAlpha.200")} _hover={{ bg: useColorModeValue("#F1F2F6", "whiteAlpha.50") }}  bg="transparent">View CV</Button>
               </a>
               <Link to="/contact">
                 <Button bg={"green.400"} color="white"variant="solid" _hover={{bg: "green.500"}}
-                  display="flex" alignItems="center"
+                  display="flex" alignItems="center" 
                 >
                   <Box>
                     <i class="fa-solid fa-message"></i>

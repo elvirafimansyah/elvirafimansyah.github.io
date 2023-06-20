@@ -43,7 +43,7 @@ const Skills = () => {
     {
       name: "Styled-Components",
       img: "https://styled-components.com/atom.png",
-      url: "https://reactjs.org/"
+      url: "https://styled-components.com/"
     },
     {
       name: "Chakra-UI",

@@ -93,18 +93,18 @@ export default function Dev() {
                 )}
               </Box>
               <Box py={1}>
-                <Stack direction={"row"}>
+                <Stack direction={"row"} spacing={3}>
                   <a
                     target="blank"
                     href={`https://github.com/elvirafimansyah/${project.slug}`}
                   >
-                    <Button bg="#F1F2F6" _dark={{bg: "whiteAlpha.200"}} ><i class="fa-brands fa-github"></i>&nbsp; Github</Button>
+                    <Button bg="#F1F2F6" _dark={{bg: "whiteAlpha.200"}} rounded="lg" ><i class="fa-brands fa-github"></i>&nbsp; Github</Button>
                   </a>
                   <a
                     target="blank"
                     href={project.url}
                   >
-                    <Button variant="outline" border='1px' borderColor="green.300" color={"green.300"} bg="transparent" _light={{ borderColor: "green.400" }}>Demo &nbsp; <i class="fa-solid fa-up-right-from-square"></i></Button>
+                    <Button color={"white"} bg="green.400" _hover={{ bg: "green.500" }} rounded="lg">Demo &nbsp; <i class="fa-solid fa-up-right-from-square"></i></Button>
                   </a>
 
                 </Stack>

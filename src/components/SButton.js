@@ -1,8 +1,8 @@
 import {
   Box,  
-  Button,
   Flex,
-  Image
+  Image,
+  useColorModeValue
 } from "@chakra-ui/react"
 const SButton = ({children, ...props}) => {
   return(
@@ -18,15 +18,16 @@ const SButton = ({children, ...props}) => {
         display="flex"
         flexDirection={"row"} 
         color="gray.200" 
-        px={3} 
+        px={5} 
         py={2} 
-        rounded="md"
+        rounded="lg"
         alignItems="center"
+        _hover={{bg: useColorModeValue("#F1F2F6", "whiteAlpha.50")}}
       >              
         <Box color={props.color}>
           {props.icon} 
         </Box>
-        &nbsp;
+        &nbsp;&nbsp;
         {props.name}
       </Box>
     </a>
@@ -47,17 +48,18 @@ const SGButton = (props) => {
         display="flex"
         flexDirection={"row"} 
         color="gray.200" 
-        px={3} 
+        px={5} 
         py={2} 
         rounded="md"
         alignItems="center"
+        _hover={{ bg: useColorModeValue("#F1F2F6", "whiteAlpha.50") }}
       > 
         <Flex alignItems="center  ">
           <Image 
             src={props.img}
             w={5}
           /> 
-          &nbsp;
+          &nbsp;&nbsp;&nbsp;
           {props.name}
         </Flex>
       </Box>

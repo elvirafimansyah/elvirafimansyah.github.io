@@ -58,7 +58,7 @@ export default function Home() {
           <Stack
             mt={["5", "20", "10", "10"]}
             display="inline"
-            spacing={3}
+            spacing={5}
             direction={"column"}
             mb={[10, 20]}
             color={useColorModeValue("gray.700", "white")}
@@ -66,7 +66,7 @@ export default function Home() {
             <Box>
               <Heading
                 size='xl'
-                pb={1}
+                pb={2}
               >
                 Hello, I'm
                 <Heading
@@ -97,29 +97,32 @@ export default function Home() {
                 />
               </Text>
             </Box>
-            <Stack direction={"row"} spacing={4} >
+            <Stack direction={"row"} spacing={5} >
               {infoLinks.map((data) => (
-                <a
-                  href={data.url}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {data.icon}
-                </a>
+                <Box _hover={{color: "green.300"}}>
+                  <a
+                    href={data.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {data.icon}
+                  </a>
+                </Box>
               ))}
             </Stack>
             <Stack
               direction={"row"}
+              spacing={3}
             >
               <a
                 href={process.env.PUBLIC_URL + 'assets/img/cv.png'}
                 target="_blank"
                 rel="noreferrer"
               >
-                <Button border='1px' borderColor={useColorModeValue("green.400", 'green.300')} color={useColorModeValue("green.400", "green.300")} bg="transparent" _hover={{ bg: useColorModeValue("green.50", "whiteAlpha.100") }}>Resume</Button>
+                <Button bg="green.400" color="white" _hover={{ bg: "green.500"}}>Resume</Button>
               </a>
 
-              <Button bg={useColorModeValue('#F1F2F6', "whiteAlpha.200")} display="flex" alignItems={"center"}  >
+              <Button border="1px" borderColor={useColorModeValue("gray.200", "whiteAlpha.200")} _hover={{ bg: useColorModeValue("#F1F2F6", "whiteAlpha.50")}} bg="transparent" display="flex" alignItems={"center"}  >
                 <Link
                   to="about"
                 >
