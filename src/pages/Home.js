@@ -119,7 +119,7 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <Button bg="green.400" color="white" _hover={{ bg: "green.500"}}>Resume</Button>
+                <Button bg="green.400" color="white" _hover={{ bg: "green.500"}} _focus={{boxShadow: "none"}}>Resume</Button>
               </a>
 
               <Button border="1px" borderColor={useColorModeValue("gray.200", "whiteAlpha.200")} _hover={{ bg: useColorModeValue("#F1F2F6", "whiteAlpha.50")}} bg="transparent" display="flex" alignItems={"center"}  >
