@@ -27,7 +27,7 @@ export default function Home() {
     },
     {
       name: "instagram",
-      url: "https://www.instagram.com/elvinaelvira.s",
+      url: "https://www.instagram.com/virn_el",
       icon: <i class="fa-brands fa-instagram fa-xl"></i>
     },
     {

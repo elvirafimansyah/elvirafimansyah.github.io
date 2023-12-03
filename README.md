@@ -57,7 +57,7 @@ Distributed under the MIT License. See [MIT LICENSE](LICENSE) for more informati
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@elvinaelvira.s](https://instagram.com/elvinaelvira.s) - freddyfirmansyah25@gmail.com
+Elvira Firmansyah - [@virn_el](https://instagram.com/virn_el) - freddyfirmansyah25@gmail.com
 
 Portfolio: [Elvira Firmansyah](https://elvirafimansyah.github.io)
 

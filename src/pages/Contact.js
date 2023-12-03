@@ -47,7 +47,7 @@ const Contact = () => {
 
               <Box py={{ base: 5, sm: 5, md: 8, lg: 5 }}>
                 <VStack pl={0} spacing={6} alignItems={"flex-start"}>
-                  <Text fontSize="md"  color={useColorModeValue("gray.800", "white")} ><i className="fa-solid fa-envelope fa-lg"></i>&nbsp; freddyfirmansyah25@gmail.com</Text>
+                  <Text fontSize="md"  color={useColorModeValue("gray.800", "white")} ><i className="fa-solid fa-envelope fa-lg"></i>&nbsp; elvirafirmansyah@gmail.com</Text>
                   <Text fontSize="md"  color={useColorModeValue("gray.800", "white")} ><i className="fa-solid fa-location-dot fa-lg"></i>&nbsp; Palembang, Indonesia</Text>
                 </VStack>
               </Box>

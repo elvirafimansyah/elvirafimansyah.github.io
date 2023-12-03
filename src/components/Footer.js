@@ -96,7 +96,7 @@ export default function Footer() {
           <SocialButton label={'Twitter'} href={'https://twitter.com/elvirafirmansy1'}>
             <i class="fa-brands fa-twitter"></i>
           </SocialButton>
-          <SocialButton label={'Instagram'} href={'https://www.instagram.com/elvinaelvira.s'}>
+          <SocialButton label={'Instagram'} href={'https://www.instagram.com/virn_el'}>
             <i class="fa-brands fa-instagram"></i>
           </SocialButton>
           <SocialButton label={'Dribbble'} href={'https://dribbble.com/ElviraFir'}>

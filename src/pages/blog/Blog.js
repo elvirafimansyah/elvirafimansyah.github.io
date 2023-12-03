@@ -1,17 +1,39 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Main from "../../layouts/Main";
 import Title from "../../components/Title";
+import SearchBar from "../../components/SearchBar";
+import { blogData } from "./Data";
+import BlogList from "./BlogList";
+
 import {
   Box,
   Divider,
   VStack,
-  useColorModeValue
+  useColorModeValue,
 } from "@chakra-ui/react"
 
 export default function Blog() {
   useEffect(function() {
     document.title = 'Blog | Elvira Firmansyah';
   }, []);
+
+  const [blogs, setBlogs] = useState(blogData);
+  const [searchKey, setSearchKey] = useState('');
+
+  const handleSearchBar = (e) => {
+    e.preventDefault();
+    handleSearchResults()
+  }
+
+  const handleSearchResults = () => {
+    const allBlogs = blogData;
+    const filteredBlogs = allBlogs.filter((blog) => 
+      blog.title.toLowerCase().includes(searchKey.toLowerCase().trim()) || blog.category.toLowerCase().includes(searchKey.toLowerCase().trim())
+    )
+
+    setBlogs(filteredBlogs)
+  }
+
   return (
     <> 
     <Main >
@@ -20,6 +42,11 @@ export default function Blog() {
         dp="Some personal opinions on technology and my random thoughts."
       />
       <Divider />
+
+      <SearchBar value={searchKey} handleArticle={handleSearchBar} handleSearchKey={(e) => setSearchKey(e.target.value)} />
+
+      {!blogs.length ? "Datanya gak ada tolol!!" : <BlogList blogs={blogs} />}
+
       <VStack spacing="5" py="5" mb={["20"]}>
         <Box bg={useColorModeValue("#F1F2F6",'whiteAlpha.200')} w='100%' p={3}  rounded="sm">
           No Content Here!
