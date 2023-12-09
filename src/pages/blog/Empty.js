@@ -8,7 +8,7 @@ import {
 const BlogEmpty = () => {
   return (
     <>
-      <Stack my="16" spacing={7} direction="column" alignItems={"center"} justifyContent={"center"} textAlign="center">
+      <Stack mt="16" mb={{base: 32, sm: 40}} spacing={7} direction="column" alignItems={"center"} justifyContent={"center"} textAlign="center">
         <i className="fa-solid fa-magnifying-glass fa-2xl" style={{
           color: useColorModeValue("#48BB78", "#68D391")}} ></i>
         <Stack lineHeight="1">
