@@ -10,6 +10,7 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 
 function App() {
+  
   return (
     <>
       <NavBar />
@@ -17,12 +18,8 @@ function App() {
         <Route exact path='/' element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
-
         <Route path="/blog/" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogItem />} />
-          {/* Use :id as a dynamic parameter for the blog post */}
-          {/* <Route path=":id" element={<BlogItem />} /> */}
-        {/* </Route> */}
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />

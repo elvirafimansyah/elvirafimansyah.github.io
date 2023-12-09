@@ -9,7 +9,8 @@ const BlogList = ({ blogs }) => {
     <Stack
       direction={"column"}
       spacing={5}
-      py={7}
+      pt={7}
+      pb={{base: 32, md: 24}}
     >
       {blogs.map((blog) => (
         <BlogDesign blog={blog} />

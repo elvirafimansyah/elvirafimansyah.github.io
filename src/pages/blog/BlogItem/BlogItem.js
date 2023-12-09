@@ -75,23 +75,88 @@ export default function BlogItem() {
             <Divider />
 
             <Stack my={5} mb={28}>
-              <Image width="full" src={blog.cover} alt={blog.authorName}></Image>
-              <Text textAlign="right" fontSize={"14px"} color={"gray.700"} _dark={{ color: "white" }} fontWeight={"500"} >Source: https://fastwork.id/</Text>
+              <Image width="full" src={blog.cover} rounded="md" alt={blog.authorName}></Image>
+              <Text textAlign="right" fontSize={"14px"} color={"gray.700"} _dark={{ color: "white" }} fontWeight={"500"} >Source: {blog.sourceImg[0]}</Text>
 
               <Stack direction="column" spacing={5} pt="5">
                 <Text color={"gray.700"} _dark={{color: "gray.300"}}>{blog.description}</Text>
 
                 <Stack spacing={3}>
                   <Heading fontSize={"25px"} fontWeight={"bold"} >{blog.subTitle[0]}</Heading>
-                  {blog.subImg[0] !== "" ? <Image src={blog.subImg[0]} width="full" /> : null}
+                  {blog.subImg[0] !== "" ? 
+                  <Stack>
+                    <Image src={blog.subImg[0]} rounded="md" width="full" /> 
+                    <Text textAlign="right" fontSize={"14px"} color={"gray.700"} _dark={{ color: "white" }} fontWeight={"500"} >Source: {blog.sourceImg[1]}</Text>  
+                  </Stack>
+                  : null}
                   <Text color={"gray.700"} _dark={{ color: "gray.300" }}>{blog.subDesc[0] ? blog.subDesc[0] : null}</Text>
                 </Stack>
 
                 <Stack spacing={3}>
                   <Heading fontSize={"25px"} fontWeight={"bold"} >{blog.subTitle[1]}</Heading>
-                  {blog.subImg[1] !== "" ? <Image src={blog.subImg[1]} width="full" /> : null}
+                    {blog.subImg[1] !== "" ? 
+                    <Stack direction="column">
+                      <Image src={blog.subImg[1]} rounded="md" width="full" />
+                      <Text textAlign="right" fontSize={"14px"} color={"gray.700"} _dark={{ color: "white" }} fontWeight={"500"} >Source: {blog.sourceImg[2]}</Text>
+                    </Stack> 
+                    : null}
                   <Text color={"gray.700"} _dark={{ color: "gray.300" }}>{blog.subDesc[1]? blog.subDesc[1] : null}</Text>
                 </Stack>
+
+                <Stack spacing={3}>
+                  <Heading fontSize={"25px"} fontWeight={"bold"} >{blog.subTitle[2]}</Heading>
+                  {blog.subImg[2] !== "" ?
+                    <Stack direction="column">
+                      <Image src={blog.subImg[2]} rounded="md" width="full" />
+                      <Text textAlign="right" fontSize={"14px"} color={"gray.700"} _dark={{ color: "white" }} fontWeight={"500"} >Source: {blog.sourceImg[3]}</Text>
+                    </Stack>
+                    : null}
+                  <Text color={"gray.700"} _dark={{ color: "gray.300" }}>{blog.subDesc[2] ? blog.subDesc[2] : null}</Text>
+                </Stack>
+
+                <Stack spacing={3}>
+                  <Heading fontSize={"25px"} fontWeight={"bold"} >{blog.subTitle[3]}</Heading>
+                  {blog.subImg[3] !== "" ?
+                    <Stack direction="column">
+                      <Image src={blog.subImg[3]} rounded="md" width="full" />
+                      <Text textAlign="right" fontSize={"14px"} color={"gray.700"} _dark={{ color: "white" }} fontWeight={"500"} >Source: {blog.sourceImg[4]}</Text>
+                    </Stack>
+                    : null}
+                  <Text color={"gray.700"} _dark={{ color: "gray.300" }}>{blog.subDesc[3] ? blog.subDesc[3] : null}</Text>
+                </Stack>
+
+                <Stack spacing={3}>
+                  <Heading fontSize={"25px"} fontWeight={"bold"} >{blog.subTitle[4]}</Heading>
+                  {blog.subImg[4] !== "" ?
+                    <Stack direction="column">
+                      <Image src={blog.subImg[4]} rounded="md" width="full" />
+                      <Text textAlign="right" fontSize={"14px"} color={"gray.700"} _dark={{ color: "white" }} fontWeight={"500"} >Source: {blog.sourceImg[5]}</Text>
+                    </Stack>
+                    : null}
+                  <Text fontWeight="400" color={"gray.700"} _dark={{ color: "gray.300" }}>{blog.subDesc[4] ? blog.subDesc[4] : null}</Text>
+                </Stack>
+
+                <Stack spacing={3}>
+                  <Heading fontSize={"25px"} fontWeight={"bold"} >{blog.subTitle[5]}</Heading>
+                  {blog.subImg[5] !== "" ?
+                    <Stack direction="column">
+                      <Image src={blog.subImg[5]} rounded="md" width="full" />
+                      <Text textAlign="right" fontSize={"14px"} color={"gray.700"} _dark={{ color: "white" }} fontWeight={"500"} >Source: {blog.sourceImg[6]}</Text>
+                    </Stack>
+                    : null}
+                  <Text fontWeight="400" color={"gray.700"} _dark={{ color: "gray.300" }}>{blog.subDesc[5] ? blog.subDesc[5] : null}</Text>
+                </Stack>
+
+                  <Stack spacing={3}>
+                    <Heading fontSize={"25px"} fontWeight={"bold"} >{blog.subTitle[6]}</Heading>
+                    {blog.subImg[6] !== "" ?
+                      <Stack direction="column">
+                        <Image src={blog.subImg[6]} rounded="md" width="full" />
+                        <Text textAlign="right" fontSize={"14px"} color={"gray.700"} _dark={{ color: "white" }} fontWeight={"500"} >Source: {blog.sourceImg[7]}</Text>
+                      </Stack>
+                      : null}
+                    <Text fontWeight="400" color={"gray.700"} _dark={{ color: "gray.300" }}>{blog.subDesc[6] ? blog.subDesc[6] : null}</Text>
+                  </Stack>
 
               </Stack>
             </Stack>

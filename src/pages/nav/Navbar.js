@@ -70,12 +70,12 @@ const MenuLinks = ({ isOpen, ...props }) => {
       flexBasis={{ base: "100%", md: "auto" }} fontWeight='600'
     >
       <Stack
-        spacing={4}
-        align="center"
-        justify={["center", "space-between", "flex-end", "flex-end"]}
-        direction={["column", "row", "row", "row"]}
-        pt={[6, 6, 0, 0]}
-        color={useColorModeValue('black', "white")}
+      spacing={4}
+      align="center"
+      justify={["center", "space-between", "flex-end", "flex-end"]}
+      direction={["column", "row", "row", "row"]}
+      pt={[6, 6, 0, 0]}
+      color={useColorModeValue('black', "white")}
       >
         <Box
           _hover={useColorModeValue({ bg: "#F1F2F6" }, { bg: "whiteAlpha.200" })}

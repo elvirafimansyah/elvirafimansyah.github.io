@@ -77,7 +77,7 @@ const Forms = () => {
                 loading ?
                   <Button isLoading loadingText='Loading...' color="green.400" variant='outline' spinnerPlacement='start' w="full" size="lg" _hover={{ bg: "whiteAlpha.200", cursor: "default" }}>Submit</Button>
                   :
-                  <Button size="lg" fontSize="sm" bgColor={"green.400"} w="full" color="white" type="submit" _hover={{ bg: "green.500" }}> Send Messages &nbsp;<i class="fa-solid fa-paper-plane"></i></Button>
+                  <Button size="lg" fontSize="sm" bgColor={"green.400"} w="full" color="white" type="submit" _hover={{ bg: "green.500" }} _focus={{ boxShadow: "none" }}> Send Messages &nbsp;<i class="fa-solid fa-paper-plane"></i></Button>
               }
             </GridItem>
           </SimpleGrid>
