@@ -30,7 +30,7 @@ const projectsList = [
     name: 'Simple Portfolio',
     slug: 'portfolio',
     tagline: 'The first simple portfolio website that I built',
-    url: 'https://elvira.elvinaf.xyz/',
+    url: 'https://elvirafimansyah.github.io/portfolio/',
     category: "web development",
     type: "HTML",
     img: process.env.PUBLIC_URL + 'assets/img/pt.png'
