@@ -3,11 +3,8 @@ import {
   Image,
   Badge,
   Stack,
-  chakra,
-  Button,
   Text,
   useColorModeValue,  
-  useColorMode
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 

@@ -47,27 +47,6 @@ export default function Blog() {
       <SearchBar value={searchKey} handleArticle={handleSearchBar} handleSearchKey={(e) => setSearchKey(e.target.value)} />
 
       {!blogs.length ? <BlogEmpty /> : <BlogList blogs={blogs} />}
-
-      {/* <VStack spacing="5" py="5" mb={["20"]}>
-        <Box bg={useColorModeValue("#F1F2F6",'whiteAlpha.200')} w='100%' p={3}  rounded="sm">
-          No Content Here!
-        </Box>
-        <Box bg={useColorModeValue("#F1F2F6",'whiteAlpha.200')} w='100%' p={3}  rounded="sm">
-          No Content Here!
-        </Box>
-        <Box bg={useColorModeValue("#F1F2F6",'whiteAlpha.200')} w='100%' p={3}  rounded="sm">
-          No Content Here!
-        </Box>
-        <Box bg={useColorModeValue("#F1F2F6",'whiteAlpha.200')} w='100%' p={3}  rounded="sm">
-          No Content Here!
-        </Box>
-        <Box bg={useColorModeValue("#F1F2F6",'whiteAlpha.200')} w='100%' p={3}  rounded="sm">
-          No Content Here!
-        </Box>
-        <Box bg={useColorModeValue("#F1F2F6",'whiteAlpha.200')} w='100%' p={3}  rounded="sm">
-          No Content Here!
-        </Box>
-      </VStack> */}
     </Main>
     </>
   )
