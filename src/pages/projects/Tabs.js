@@ -21,8 +21,10 @@ const TabItem = ({ ...props }) => {
           <TabList >
             <Stack direction="row" pb="5" spacing={3} >
               <Tab
-                _selected={{ color: 'white', bg: "green.400", }}
-                bg={useColorModeValue('#F1F2F6', "whiteAlpha.200")}
+                _selected={{ color: 'white', bg: "turquo", }}
+                bg={useColorModeValue('lightgray', "lightdark1")}
+                border="1px"
+                borderColor={useColorModeValue("gray.200", "lightdark2")}
                 rounded="lg"
                 _focus={{ boxShadow: "none"}}
                 fontSize="14px"
@@ -30,8 +32,10 @@ const TabItem = ({ ...props }) => {
                 All
               </Tab>
               <Tab
-                _selected={{ color: 'white', bg: "green.400" }}
-                bg={useColorModeValue('#F1F2F6', "whiteAlpha.200")}
+                _selected={{ color: 'white', bg: "turquo" }}
+                bg={useColorModeValue('lightgray', "lightdark1")}
+                border="1px"
+                borderColor={useColorModeValue("gray.200", "lightdark2")}
                 rounded="lg"
                 _focus={{ boxShadow: "none", outline: "none" }}
                 fontSize="14px"
@@ -39,9 +43,11 @@ const TabItem = ({ ...props }) => {
                 Dev
               </Tab>
               <Tab
-                _selected={{ color: 'white', bg: "green.400" }}
+                _selected={{ color: 'white', bg: "turquo" }}
+                border="1px"
+                borderColor={useColorModeValue("gray.200", "lightdark2")}
                 rounded="lg"
-                bg={useColorModeValue('#F1F2F6', "whiteAlpha.200")}
+                bg={useColorModeValue('lightgray', "lightdark1")}
                 _focus={{ boxShadow: "none", outline: "none" }}
                 fontSize="14px"
               >

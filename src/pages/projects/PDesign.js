@@ -34,11 +34,11 @@ export default function DesignProjects() {
         py={7}
       >
         {post.map((project) => (
-          <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden' key={project.name} pos="relative" >
+          <Box maxW='sm' borderWidth='1px' borderColor="gray.200" borderRadius='lg' bg="gray.50" _dark={{ bg: "lightdark1", borderColor: "lightdark2" }} overflow='hidden' key={project.name} pos="relative" >
             <Image src={project.images.hidpi} alt={project.img} />
             <Box p='6' >
               <Box display='flex' alignItems='baseline'>
-                <Badge borderRadius='full' px={2} mr={2} colorScheme='teal'>
+                <Badge borderRadius='full' border="1px" borderColor="lightgray2" px={3} py={1} mr={2} mb={1} color="turquo" bg="white" _dark={{ bg: "lightdark2", borderColor: "lightdark3" }}>
                   ui/ux design
                 </Badge>
               </Box>
@@ -58,7 +58,7 @@ export default function DesignProjects() {
                   target="blank"
                   href={project.html_url}
                 >
-                  <Button bg="green.400" _hover={{bg: "green.500"}} color="white" _focus={{boxShadow: "none"}} pos="absolute" bottom="6"><i class="fa-brands fa-dribbble"></i>&nbsp; Dribbble</Button>
+                  <Button bg="turquo" _hover={{bg: "darkturquo"}} color="white" _focus={{boxShadow: "none"}} pos="absolute" bottom="6"><i class="fa-brands fa-dribbble"></i>&nbsp; Dribbble</Button>
                 </a>
               </Box>
             </Box>

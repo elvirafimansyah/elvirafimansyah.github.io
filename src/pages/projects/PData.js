@@ -1,48 +1,12 @@
 const projectsList = [
   {
-    name: 'Covid Tracker',
-    slug: 'covid-app',
-    tagline: 'A free, open source covid app for the web',
-    url: 'https://kovidapp.netlify.app/',
+    name: 'Emortfy',
+    slug: 'emortfy',
+    tagline: '📈 A list of spotify chart, such as top artists, top albums, etc  ',
+    url: 'http://emorenotes.vercel.app/',
     category: "web development",
-    type: "JavaScript",
-    img: process.env.PUBLIC_URL + 'assets/img/covid.png'
-  },
-  {
-    name: 'Weather App',
-    slug: 'WeatherApp',
-    tagline: 'A weather forecast checker app for the web ',
-    url: 'https://apweather.vercel.app/',
-    category: "web development",
-    type: "JavaScript",
-    img: process.env.PUBLIC_URL + 'assets/img/dashboard.png'
-  },
-  {
-    name: 'News ID',
-    slug: 'news-id',
-    tagline: 'An online news site in Indonesia for the web',
-    url: "https://newsid.vercel.app/",
-    category: "web development",
-    type: "JavaScript",
-    img: process.env.PUBLIC_URL + 'assets/img/news.png'
-  },
-  {
-    name: 'Simple Portfolio',
-    slug: 'portfolio',
-    tagline: 'The first simple portfolio website that I built',
-    url: 'https://elvirafimansyah.github.io/portfolio/',
-    category: "web development",
-    type: "HTML",
-    img: process.env.PUBLIC_URL + 'assets/img/pt.png'
-  },
-  {
-    name: 'Quiz Emore',
-    slug: 'quiz-app',
-    tagline: 'The quiz game bulit with vannila javascript',
-    url: 'https://quizemore.vercel.app/',
-    category: "web development",
-    type: "HTML",
-    img: process.env.PUBLIC_URL + 'assets/img/quiz.png'
+    type: "React JS",
+    img: process.env.PUBLIC_URL + 'assets/img/emortfy.png'
   },
   {
     name: 'Emore Notes',
@@ -50,18 +14,55 @@ const projectsList = [
     tagline: '📝 Emore Notes is the best place to jot down quick thoughts.',
     url: 'http://emorenotes.vercel.app/',
     category: "web development",
-    type: "HTML",
-    img: process.env.PUBLIC_URL + 'assets/img/notes.png'
+    type: "javascript",
+    img: process.env.PUBLIC_URL + 'assets/img/emorenotes.png'
+  },
+  {
+    name: 'Weather App',
+    slug: 'Apweather-react',
+    tagline: '⛅ A weather forecast checker app for the web ',
+    url: 'https://apweather.vercel.app/',
+    category: "web development",
+    type: "react js",
+    img: process.env.PUBLIC_URL + 'assets/img/dashboard.png'
+  },
+  {
+    name: 'Newdev',
+    slug: 'news-id',
+    tagline: '📰 An online news site in Indonesia for the web',
+    url: "https://newsid.vercel.app/",
+    category: "web development",
+    type: "JavaScript",
+    img: process.env.PUBLIC_URL + 'assets/img/news.png'
+  },
+  {
+    name: 'Covid Tracker',
+    slug: 'covid-app',
+    tagline: '📊 A free, open source covid app for the web',
+    url: 'https://kovidapp.netlify.app/',
+    category: "web development",
+    type: "JavaScript",
+    img: process.env.PUBLIC_URL + 'assets/img/covid.png'
   },
   {
     name: 'Engxzu',
     slug: 'Engxzu_',
-    tagline: 'Engxzu is an online learning english application ',
+    tagline: '📚 Engxzu is an online learning english application ',
     url: 'https://engxzu.netlify.app/',
     category: "web development",
     type: "HTML",
     img: process.env.PUBLIC_URL + 'assets/img/engxzu.png'
-  }
+  },
+  {
+    name: 'Emore Quiz',
+    slug: 'quiz-app',
+    tagline: '❓ The quiz game bulit with vannila javascript',
+    url: 'https://quizemore.vercel.app/',
+    category: "web development",
+    type: "javascript",
+    img: process.env.PUBLIC_URL + 'assets/img/quiz.png'
+  },
+  
 ]
 
 const Design = [
