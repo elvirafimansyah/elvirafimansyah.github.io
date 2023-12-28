@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <Container maxW="container.lg">
+      <Container maxW={"container.lg"}>
         <Flex
           direction={["column", "column", "row", "row"]}
           justifyContent={["center", "space-around"]}
@@ -56,11 +56,11 @@ export default function Home() {
           h={"100vh"}
         >
           <Stack
-            mt={["5", "20", "10", "10"]}
+            mt={["20", "24", "10", "10"]}
             display="inline"
             spacing={5}
             direction={"column"}
-            mb={[10, 20]}
+            mb={[0, 10, 40]}
             color={useColorModeValue("gray.700", "white")}
           >
             <Box>
@@ -70,7 +70,7 @@ export default function Home() {
               >
                 Hello, I'm
                 <Heading
-                  color={useColorModeValue("green.400", "green.300")}
+                  color={"turquo"}
                   size={["2xl"]}
                   ml={"-2px"}
                 >
@@ -99,7 +99,7 @@ export default function Home() {
             </Box>
             <Stack direction={"row"} spacing={5} >
               {infoLinks.map((data) => (
-                <Box _hover={{color: "green.300"}}>
+                <Box _hover={{color: "turquo"}}>
                   <a
                     href={data.url}
                     target="_blank"
@@ -119,10 +119,10 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <Button bg="green.400" color="white" _hover={{ bg: "green.500"}} _focus={{boxShadow: "none"}}>Resume</Button>
+                <Button bg="turquo" color="white" _hover={{ bg: "darkturquo"}} _focus={{boxShadow: "none"}} py={5}>Resume</Button>
               </a>
 
-              <Button border="1px" borderColor={useColorModeValue("gray.200", "whiteAlpha.200")} _hover={{ bg: useColorModeValue("#F1F2F6", "whiteAlpha.50") }} bg="transparent" display="flex" alignItems={"center"} _focus={{ boxShadow: "none" }} >
+              <Button border="1px" borderColor={useColorModeValue("gray.200", "whiteAlpha.200")} _hover={{ bg: useColorModeValue("lightgray", "whiteAlpha.50") }} bg="transparant" display="flex" alignItems={"center"} _focus={{ boxShadow: "none" }} fontWeight="medium">
                 <Link
                   to="about"
                 >
@@ -134,15 +134,11 @@ export default function Home() {
               </Button>
             </Stack>
           </Stack>
-          <Image
-            borderRadius='full'
-            boxSize={250}
-            src={process.env.PUBLIC_URL + 'assets/img/profile.png'}
-            border='2px'
-            borderColor={useColorModeValue('green.400', "green.300")}
-            p={2}
-            mb={[0, 10]}
-          />
+            <Image
+              boxSize={300}
+              src={process.env.PUBLIC_URL + 'assets/img/techgirl.png'}
+              mt={[7, 1, -32]}
+            />
         </Flex>
         <Hide breakpoint='(min-width: 700px)' >
           <ProjectContent />

@@ -14,6 +14,8 @@ export default function Footer() {
     return (
       <chakra.button
         bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+        border="1px"
+        borderColor="#383838"
         rounded={'md'}
         w={8}
         h={8}
@@ -27,7 +29,7 @@ export default function Footer() {
         transition={'background 0.3s ease'}
         _hover={{
           bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-          color: useColorModeValue("green.500", "green.300")
+          color: "turquo"
         }}>
         <VisuallyHidden>{props.label}</VisuallyHidden>
         {children}
@@ -36,39 +38,45 @@ export default function Footer() {
   }
   return (
     <Box
-      bg={useColorModeValue('bg_putih', 'gray.900')}
       color={useColorModeValue('gray.900', 'gray.200')}
-      pos="absolute"
+      pos={{md:  "absolute"}}
       bottom={["-18", "0", "0"]}
       left="0"
       width="full"
     >
       <Container
         as={Stack}
-        maxW={'6xl'}
-        py={4}
+        maxW={"6xl"}
+        py={6}
         spacing={4}
         justify={'center'}
         align={'center'}
-        borderBottom="1px"
-        borderColor={useColorModeValue("blackAlpha.300", "whiteAlpha.300")}
+        borderTop="1px"
+        borderColor={useColorModeValue("blackAlpha.200", "whiteAlpha.200")}
       >
-        <Stack direction={'row'} spacing={6} alignItems={"center"} >
+        <Stack direction={'row'} spacing={3} alignItems={"center"} >
           <a
             href="https://github.com/elvirafimansyah/elvirafimansyah.github.io"
             target="blank"
-
           >
             <chakra.span
               color={useColorModeValue("gray.800", "white")}
               _hover={{
                 cursor: "pointer",
-                textDecoration: "underline",
-                textDecorationColor: "green.300",
-                textDecorationThickness: "2px"
+                bg: "lightdark1",
+                py: 2,
+                px: 3,
+                rounded: "lg",
+                border: "1px",
+                borderColor: "lightdark2"
+                // textDecoration: "underline",
+                // textDecorationColor: "turquo",
+                // textDecorationThickness: "2px"
               }}
-              textUnderlineOffset={3}>
-              <i class="fa-brands fa-github"></i> &nbsp;Source Code
+              py={2}
+              px={3}
+              >
+              <i className="fa-brands fa-github"></i> &nbsp;Source Code
             </chakra.span>
           </a>
           <a
@@ -83,24 +91,30 @@ export default function Footer() {
         as={Stack}
         maxW={'6xl'}
         py={4}
+        px={6}
         direction={{ base: 'column', md: 'row' }}
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
-        align={{ base: 'center', md: 'center' }}
+        align={{ base: 'start', md: 'center' }}
+        bg={useColorModeValue("lightgray", "lightdark1")}
+        border="1px"
+        borderColor="lightdark2"
+        rounded={{ lg: "lg" }}
+        mb={{ lg: 4 }}
       >
-        <Text>© 2023 Elvira Firmansyah. All rights reserved</Text>
+        <Text>© 2023 <chakra.a href="https://github.com/elvirafimansyah" target="_blank" color="turquo" _hover={{ textDecoration: "underline", textDecorationColor: "primaryblue", textUnderlineOffset: 3 }}>Elvira Firmansyah</chakra.a>. All rights reserved</Text>
         <Stack direction={'row'} spacing={3}>
           <SocialButton label={'Github'} href={'https://github.com/elvirafimansyah'}>
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
           </SocialButton>
           <SocialButton label={'Twitter'} href={'https://twitter.com/elvirafirmansy1'}>
-            <i class="fa-brands fa-twitter"></i>
+            <i className="fa-brands fa-twitter"></i>
           </SocialButton>
           <SocialButton label={'Instagram'} href={'https://www.instagram.com/virn_el'}>
-            <i class="fa-brands fa-instagram"></i>
+            <i className="fa-brands fa-instagram"></i>
           </SocialButton>
           <SocialButton label={'Dribbble'} href={'https://dribbble.com/ElviraFir'}>
-            <i class="fa-brands fa-dribbble"></i>
+            <i className="fa-brands fa-dribbble"></i>
           </SocialButton>
         </Stack>
       </Container>

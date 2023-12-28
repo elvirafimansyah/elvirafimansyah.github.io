@@ -16,7 +16,7 @@ const NavBar = (props) => {
 
   return (
     <NavBarContainer {...props} >
-      <Container maxW="container.lg" alignItems="center" zIndex={10}>
+      <Container maxW="6xl" alignItems="center" zIndex={10}>
         <Flex
           justify="space-between"
           alignItems={["none", "center"]}
@@ -78,7 +78,7 @@ const MenuLinks = ({ isOpen, ...props }) => {
       color={useColorModeValue('black', "white")}
       >
         <Box
-          _hover={useColorModeValue({ bg: "#F1F2F6" }, { bg: "whiteAlpha.200" })}
+          _hover={useColorModeValue({ bg: "lightgray" }, { bg: "whiteAlpha.200" })}
           px={4}
           py={2}
           rounded="lg"
@@ -86,7 +86,7 @@ const MenuLinks = ({ isOpen, ...props }) => {
           <Link to="/" {...props}> Home</Link>
         </Box>
         <Box
-          _hover={useColorModeValue({ bg: "#F1F2F6" }, { bg: "whiteAlpha.200" })}
+          _hover={useColorModeValue({ bg: "lightgray" }, { bg: "whiteAlpha.200" })}
           px={4}
           py={2}
           rounded="lg"
@@ -94,7 +94,7 @@ const MenuLinks = ({ isOpen, ...props }) => {
           <Link to="about" {...props}>About</Link>
         </Box>
         <Box
-          _hover={useColorModeValue({ bg: "#F1F2F6" }, { bg: "whiteAlpha.200" })}
+          _hover={useColorModeValue({ bg: "lightgray" }, { bg: "whiteAlpha.200" })}
           px={4}
           py={2}
           rounded="lg"
@@ -102,7 +102,7 @@ const MenuLinks = ({ isOpen, ...props }) => {
           <Link to="projects" {...props}>Projects</Link>
         </Box>
         <Box
-          _hover={useColorModeValue({ bg: "#F1F2F6" }, { bg: "whiteAlpha.200" })}
+          _hover={useColorModeValue({ bg: "lightgray" }, { bg: "whiteAlpha.200" })}
           px={4}
           py={2}
           rounded="lg"
@@ -110,7 +110,7 @@ const MenuLinks = ({ isOpen, ...props }) => {
           <Link to="blog" {...props}>Blog</Link>
         </Box>
         <Box
-          _hover={useColorModeValue({ bg: "#F1F2F6" }, { bg: "whiteAlpha.200" })}
+          _hover={useColorModeValue({ bg: "lightgray" }, { bg: "whiteAlpha.200" })}
           px={4}
           py={2}
           rounded="lg"
@@ -132,9 +132,9 @@ const NavBarContainer = ({ children, ...props }) => {
       w="100%"
       mb={8}
       py={4}
-      bg={useColorModeValue('white', 'gray.800')}
+      bg={useColorModeValue('white', 'bg')}
       color={"white"}
-      borderBottom='1px' borderColor={useColorModeValue("#F1F2F6",'whiteAlpha.100')}
+      borderBottom='1px' borderColor={useColorModeValue("lightgray",'whiteAlpha.100')}
       pos="fixed"
       zIndex={10}
       {...props}

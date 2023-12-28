@@ -9,8 +9,18 @@ const config = {
 // 3. extend the theme
 const darkTheme = extendTheme({ 
   config,
+  fonts: {
+    body: `Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"`,
+    heading: `Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"`
+  },
   colors: {
     twhite: "#cbd5e1",
+    turquo: "#14b8a6", //#805AD5 #84e000 
+    darkturquo: "#0d9488",
+    bg: "#121212",
+    lightdark1: "#181818",
+    lightdark2: "#222222",
+    lightdark3: "#383838",
     language: {
       js: "#f0db4f",
       html: "#E54C21",
@@ -20,7 +30,14 @@ const darkTheme = extendTheme({
       github: "#1B1F23",
       git: "#E94E31"
     },
-    bg_putih: "#F8FAFC"
+    lightgray: "#F1F2F6"
+  },
+  styles: {
+    global: ({ colorMode }) => ({
+      body: {
+        bg: colorMode === "light" ? "white" : "bg",
+      },
+    }),
   }
 })
 
