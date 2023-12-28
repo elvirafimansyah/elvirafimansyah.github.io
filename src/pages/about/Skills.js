@@ -10,7 +10,7 @@ import { SButton, SGButton }from "../../components/SButton"
 const Skills = () => {
   const STitle = (props) => {
     return(
-      <Text fontSize="lg" fontWeight="semibold" color={useColorModeValue("gray.700", "gray.300")}>{props.name}</Text>
+      <Text fontSize="lg" fontWeight="medium" color={useColorModeValue("gray.700", "gray.300")}>{props.name}</Text>
     )
   }
   const languages = [
@@ -95,14 +95,14 @@ const Skills = () => {
   return(
     <>
     <Box
-      pt="4"
-      pb="20"
+      pt={4}
+      pb={[3,3, 36,36]}
     >
-      <Text fontSize={"2xl"} pb={2}fontWeight="650" color={useColorModeValue("green.400","green.300")}>Skills</Text>
+      <Text fontSize={"2xl"} pb={2}fontWeight="650" color={"turquo"}>Skills</Text>
       <Box>
         <STitle name="Languages" />
         <Stack 
-          direction={["column","column","column","row"]}
+          direction={["column","column","row","row"]}
           alignItems={["stretch","stretch","stretch","center"]}
           wrap="wrap"
           spacing={2}
@@ -121,7 +121,7 @@ const Skills = () => {
       <Box>
         <STitle name="Libraries" />
         <Stack 
-          direction={["column","column","column","row"]}
+          direction={["column","column","row","row"]}
           alignItems={["stretch","stretch","stretch","center"]}
           wrap="wrap"
           spacing={2}
@@ -147,7 +147,7 @@ const Skills = () => {
       <Box>
         <STitle name="Framework"/>
         <Stack 
-          direction={["column","column","column","row"]}
+          direction={["column","column","row","row"]}
           alignItems={["stretch","stretch","stretch","center"]}
           wrap="wrap"
           spacing={2}
@@ -173,7 +173,7 @@ const Skills = () => {
       <Box>
         <STitle name="Tools & Systems" />
         <Stack 
-          direction={["column","column","column","row"]}
+          direction={["column","column","row","row"]}
           alignItems={["stretch","stretch","stretch","center"]}
           wrap="wrap"
           spacing={2}

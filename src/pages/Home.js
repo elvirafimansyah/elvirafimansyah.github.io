@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <Container maxW={"container.lg"}>
+      <Container maxW={"6xl"}>
         <Flex
           direction={["column", "column", "row", "row"]}
           justifyContent={["center", "space-around"]}
@@ -119,7 +119,7 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <Button bg="turquo" color="white" _hover={{ bg: "darkturquo"}} _focus={{boxShadow: "none"}} py={5}>Resume</Button>
+                <Button bg="turquo" color="white" _hover={{ bg: "darkturquo"}} _focus={{boxShadow: "none"}} py={5} fontWeight="medium">Resume</Button>
               </a>
 
               <Button border="1px" borderColor={useColorModeValue("gray.200", "whiteAlpha.200")} _hover={{ bg: useColorModeValue("lightgray", "whiteAlpha.50") }} bg="transparant" display="flex" alignItems={"center"} _focus={{ boxShadow: "none" }} fontWeight="medium">
@@ -137,7 +137,7 @@ export default function Home() {
             <Image
               boxSize={300}
               src={process.env.PUBLIC_URL + 'assets/img/techgirl.png'}
-              mt={[7, 1, -32]}
+              mt={[7, 1, -36]}
             />
         </Flex>
         <Hide breakpoint='(min-width: 700px)' >

@@ -15,7 +15,7 @@ const darkTheme = extendTheme({
   },
   colors: {
     twhite: "#cbd5e1",
-    turquo: "#14b8a6", //#805AD5 #84e000 
+    turquo: "#14b8a6",
     darkturquo: "#0d9488",
     bg: "#121212",
     lightdark1: "#181818",
@@ -30,7 +30,8 @@ const darkTheme = extendTheme({
       github: "#1B1F23",
       git: "#E94E31"
     },
-    lightgray: "#F1F2F6"
+    lightgray: "#F1F2F6",
+    lightgray2: "#d0d1d6"
   },
   styles: {
     global: ({ colorMode }) => ({

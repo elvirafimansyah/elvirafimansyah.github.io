@@ -5,8 +5,10 @@ const DarkModeToggle = ({...props}) => {
   return (
     <IconButton
       aria-label="Toggle theme"
-      bg={useColorModeValue('#F1F2F6', "whiteAlpha.200")}
-      color={useColorModeValue('green.300', 'green.400')}
+      bg={useColorModeValue('lightgray', "lightdark1")}
+      border="1px"
+      borderColor={useColorModeValue("gray.200", "lightdark2")}
+      color={"turquo"}
       icon={useColorModeValue(<i class="fa-solid fa-moon"></i>, <i class="fa-solid fa-sun"></i>)}
       onClick={toggleColorMode}
       _focus={{ boxShadow: "none"}}

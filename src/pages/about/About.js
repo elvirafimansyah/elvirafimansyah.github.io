@@ -19,7 +19,7 @@ import Main from "../../layouts/Main";
 
 const Span = ({...props}) => {
   return(
-    <chakra.span color={useColorModeValue("gray.800", "white")} _hover={{color: props.color, cursor: props.cursor}} textDecoration="underline" textDecorationColor="green.300" textDecorationThickness="2px" textUnderlineOffset={3} {...props}>{props.text}</chakra.span>
+    <chakra.span color={useColorModeValue("gray.800", "white")} _hover={{color: props.color, cursor: props.cursor}} textDecoration="underline" textDecorationColor="turquo" textDecorationThickness="2px" textUnderlineOffset={3} {...props}>{props.text}</chakra.span>
   )
 }
 
@@ -30,7 +30,7 @@ export default function About() {
 
   const TextP = ({children, ...props}) => {
     return(
-      <Text color={useColorModeValue("gray.700", "twhite")} fontWeight="450" fontSize={"lg"} {...props}>
+      <Text color={useColorModeValue("gray.700", "twhite")} fontWeight="normal" fontSize={"lg"} {...props}>
         {children}
       </Text>
     )
@@ -42,10 +42,10 @@ export default function About() {
       <Box pb={20} >
         <Stack
           direction={"row"} 
-          py={8}
+          py={[3,4,8]}
           alignItems="center"
         >
-          <Heading w={"250px"} color={useColorModeValue("gray.700","white")}><chakra.span color={useColorModeValue("green.400","green.300")}>About</chakra.span> Me</Heading>
+          <Heading w={"250px"} color={useColorModeValue("gray.700","white")}><chakra.span color={"turquo"}>About</chakra.span> Me</Heading>
           <Divider />
         </Stack>
         <Flex
@@ -54,23 +54,23 @@ export default function About() {
           alignItems="center"
         >
           <Stack 
-            maxW={["md","3xl","md","xl"]}
+            maxW={["md","4xl","lg","2xl"]}
             spacing={3}
-            pb={[10, 0]}
+            pb={[10, 10, 0, 0]}
           >
             <TextP>
-              Hello! I am Elvira Firmansyah I'm from Indonesia. I'm a student. I enjoy learning something new and getting feedback to make myself better and improve.
+              Hello! I am Elvira Firmansyah. I'm from Indonesia. I'm a student. I enjoy learning something new and getting feedback to make myself better and improve.
             </TextP>
             <TextP>
               I adore the ideas of what I can build through coding. From that point, I started learning web development tools such as <a href="https://reactjs.org" target="blank"><Span text="React"/></a> & <a href="https://reactjs.org" target="blank"><Span text="Tailwind"/></a>
             </TextP>
             <TextP>
-              I am a person who is interested in UI/UX Design and Front-End Development I am passionate about building a career in UI/UX design & development, to which I would bring dedication, enthusiasm and creativity. I am seeing a part-time position in the industry in which I can put into practice my knowledge and experience.
+              I am a person who is interested in UI/UX Design and Front-End Development. I am passionate about building a career in UI/UX design & development, to which I would bring dedication, enthusiasm and creativity. I am seeing a part-time position in the industry in which I can put into practice my knowledge and experience.
             </TextP>
             <TextP pb="2">
                 Check out the <Link to="/projects"><Span text="projects" cursor="pointer" /></Link> page to see a highlight of the open-source projects I've made, and <Link to="/blog"><Span text="blog" /></Link> to see everything I've written
             </TextP>
-            <HStack alignItems="flex-start" >
+            <HStack alignItems="flex-start" spacing={3} >
               <a
                 href={process.env.PUBLIC_URL + 'assets/img/cv.png'}
                 target="_blank"
@@ -79,7 +79,7 @@ export default function About() {
                 <Button border="1px" borderColor={useColorModeValue("gray.200", "whiteAlpha.200")} _hover={{ bg: useColorModeValue("#F1F2F6", "whiteAlpha.50") }}  bg="transparent" _focus={{boxShadow: "none"}}>View CV</Button>
               </a>
               <Link to="/contact">
-                <Button bg={"green.400"} color="white"variant="solid" _hover={{bg: "green.500"}} display="flex" alignItems="center" _focus={{boxShadow: "none"}} 
+                <Button bg={"turquo"} color="white" variant="solid" _hover={{bg: "darkturquo"}} display="flex" alignItems="center" _focus={{boxShadow: "none"}} 
                 >
                   <Box>
                     <i class="fa-solid fa-message"></i>
@@ -89,15 +89,18 @@ export default function About() {
               </Link>
             </HStack>
           </Stack>
-          
-          <Image 
-            borderRadius={20}
-            boxSize={250}
-            src={process.env.PUBLIC_URL + 'assets/img/profile.png'}
-            border='2px' 
-            borderColor={useColorModeValue('green.400', "green.300")}
+          <Box 
+            border='1px'
+            borderColor={useColorModeValue('gray.200', "lightdark2")}
+            bg={useColorModeValue("lightgray", "lightdark1")}
             p={2}
-          />
+            rounded="lg"
+          >
+            <Image 
+              boxSize={250}
+              src={process.env.PUBLIC_URL + 'assets/img/techgirl.png'}
+            />
+          </Box>
         </Flex>
       </Box>
       <Divider />

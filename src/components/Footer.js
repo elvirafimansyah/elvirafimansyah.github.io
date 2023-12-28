@@ -15,7 +15,7 @@ export default function Footer() {
       <chakra.button
         bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
         border="1px"
-        borderColor="#383838"
+        borderColor={useColorModeValue("lightgray2","lightdark3")}
         rounded={'md'}
         w={8}
         h={8}
@@ -69,9 +69,6 @@ export default function Footer() {
                 rounded: "lg",
                 border: "1px",
                 borderColor: "lightdark2"
-                // textDecoration: "underline",
-                // textDecorationColor: "turquo",
-                // textDecorationThickness: "2px"
               }}
               py={2}
               px={3}
@@ -98,7 +95,7 @@ export default function Footer() {
         align={{ base: 'start', md: 'center' }}
         bg={useColorModeValue("lightgray", "lightdark1")}
         border="1px"
-        borderColor="lightdark2"
+        borderColor={useColorModeValue("gray.200","lightdark2")}
         rounded={{ lg: "lg" }}
         mb={{ lg: 4 }}
       >

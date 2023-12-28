@@ -13,16 +13,15 @@ const SButton = ({children, ...props}) => {
       <Box 
         as="button" 
         border="1px" 
-        borderColor={"whiteAlpha.300"} 
-        _light={{ borderColor: "gray.300" , color: "gray.700"}} 
+        borderColor={useColorModeValue("gray.200", "whiteAlpha.200")} 
         display="flex"
         flexDirection={"row"} 
-        color="gray.200" 
+        color={useColorModeValue("gray.700","gray.200")} 
         px={5} 
         py={2} 
         rounded="lg"
         alignItems="center"
-        _hover={{bg: useColorModeValue("#F1F2F6", "whiteAlpha.50")}}
+        _hover={{bg: useColorModeValue("lightgray", "lightdark1")}}
       >              
         <Box color={props.color}>
           {props.icon} 
@@ -41,18 +40,17 @@ const SGButton = (props) => {
       href={props.url}
     >
       <Box 
-        as="button" 
-        border="1px" 
-        borderColor={"whiteAlpha.300"} 
-        _light={{ borderColor: "gray.300" , color: "gray.700"}} 
+        as="button"
+        border="1px"
+        borderColor={useColorModeValue("gray.200", "whiteAlpha.200")}
         display="flex"
-        flexDirection={"row"} 
-        color="gray.200" 
-        px={5} 
-        py={2} 
-        rounded="md"
+        flexDirection={"row"}
+        color={useColorModeValue("gray.700", "gray.200")}
+        px={5}
+        py={2}
+        rounded="lg"
         alignItems="center"
-        _hover={{ bg: useColorModeValue("#F1F2F6", "whiteAlpha.50") }}
+        _hover={{ bg: useColorModeValue("lightgray", "lightdark1") }}
       > 
         <Flex alignItems="center  ">
           <Image 
