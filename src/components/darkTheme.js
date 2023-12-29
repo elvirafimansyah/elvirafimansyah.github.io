@@ -10,8 +10,8 @@ const config = {
 const darkTheme = extendTheme({ 
   config,
   fonts: {
-    body: `Inter, sans-serif`,
-    heading: `Inter, sans-serif`
+    body: "Inter",
+    heading: "Inter"
   },
   colors: {
     twhite: "#cbd5e1",
