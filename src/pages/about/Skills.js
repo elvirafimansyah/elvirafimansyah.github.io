@@ -96,6 +96,7 @@ const Skills = () => {
     <>
     <Box
       pt={4}
+      pb={[20]}
     >
       <Text fontSize={"2xl"} pb={2}fontWeight="650" color={"turquo"}>Skills</Text>
       <Box>
