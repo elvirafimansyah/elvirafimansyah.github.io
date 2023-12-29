@@ -40,7 +40,7 @@ const Contact = () => {
           >
             <VStack spacing={1} alignItems={["center", "center", "flex-start"]} color="white" w="full" h="full">
               <VStack alignItems={["center", "center", "flex-start"]} >
-                <Text fontSize="2xl" fontWeight="bold" color={useColorModeValue("green.400", "green.300")} >Contact Information</Text>
+                <Text fontSize="2xl" fontWeight="bold" color={"turquo"} >Contact Information</Text>
                 <Text fontSize={"md"} color={useColorModeValue("gray.700", "gray.300")} >Our friendly team would have to hear from you</Text>
                 <Divider />
               </VStack>
