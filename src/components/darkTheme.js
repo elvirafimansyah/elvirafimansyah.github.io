@@ -10,8 +10,8 @@ const config = {
 const darkTheme = extendTheme({ 
   config,
   fonts: {
-    body: `Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"`,
-    heading: `Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"`
+    body: `Inter, sans-serif`,
+    heading: `Inter, sans-serif`
   },
   colors: {
     twhite: "#cbd5e1",
