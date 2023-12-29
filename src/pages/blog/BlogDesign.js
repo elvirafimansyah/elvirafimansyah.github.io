@@ -27,16 +27,10 @@ const BlogDesign = ({
     <Box maxW='full' borderWidth='1px' borderRadius='lg' overflow='hidden' key={id} >
       <Box p='6' >
         <Box display='flex' flexWrap={"wrap"} alignItems='baseline' >
-          <Badge borderRadius='full' px={3} py={1} mr={2} bg={useColorModeValue("#F1F2F6", "whiteAlpha.200")} color={useColorModeValue("green.400", "green.300")}>
+          <Badge borderRadius='full' px={3} py={1} mr={2} bg={useColorModeValue("lightgray", "lightdark1")} color={"turquo"} border="1px" borderColor={useColorModeValue("gray.200", "lightdark2")}> 
             {category}
           </Badge>
           <Text fontSize={"15px"}>{createdAt}</Text>
-          {/* {subCategory.map((category) => (
-            <Badge borderRadius='full' px={3} py={1} mr={2} bg="#F1F2F6" _dark={{ bg: "whiteAlpha.200" }} >
-              {category}
-            </Badge>
-          ))} */}
-
         </Box>
         <Box
           mt='1'
@@ -44,7 +38,7 @@ const BlogDesign = ({
           as='h1'
           lineHeight='tight'
           fontSize={"21px"}
-          _hover={{ textDecoration: "underline", textDecorationColor: "green.400", textUnderlineOffset: 3 }}
+          _hover={{ textDecoration: "underline", textDecorationColor: "turquo", textUnderlineOffset: 3 }}
         >
           <Link 
             to={`${id}`}
@@ -58,7 +52,7 @@ const BlogDesign = ({
             <Image borderRadius='full' boxSize='35px' src={authorAvatar} alt='Elvira Firmansyah' />
             <Link to="/about"><Text>{authorName}</Text></Link>
           </Stack>
-          <Text color={useColorModeValue("green.400", "green.300")} >{estimated} read</Text>
+          <Text color={"turquo"} >{estimated} read</Text>
         </Stack>
       </Box>
     </Box>

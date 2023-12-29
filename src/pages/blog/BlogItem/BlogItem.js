@@ -42,17 +42,17 @@ export default function BlogItem() {
     <>
       <Container maxW="container.md" py={20} >
         <Link to="/blog">
-          <Button mt={3} color={useColorModeValue("gray.700", "white")} bg={useColorModeValue("#F1F2F6", "whiteAlpha.200")} _hover={{ bg: useColorModeValue("gray.200", "whiteAlpha.100")}} _focus={{ boxShadow: "none" }} rounded="lg"> <i class="fa-solid fa-arrow-left"></i>&nbsp; Back </Button>
+          <Button mt={3} color={useColorModeValue("gray.700", "white")} bg={useColorModeValue("lightgray", "lightdark1")} _hover={{ bg: useColorModeValue("gray.200", "lightdark2") }} _focus={{ boxShadow: "none" }} rounded="lg" border="1px" borderColor={useColorModeValue("gray.200", "lightdark2")}> <i class="fa-solid fa-arrow-left"></i>&nbsp; Back </Button>
         </Link>
         {
           blog ? 
           <Box>
             <Box display='flex' mt={5} flexWrap={"wrap"} alignItems='baseline' >
-              <Badge borderRadius='full' px={3} py={1} mr={2} mb={2} color="green.400" bg="#F1F2F6" _dark={{bg: "whiteAlpha.200", color: "green.300"}}>
+                <Badge borderRadius='full' px={3} py={1} mr={2} mb={2} color="turquo" border="1px" borderColor={"gray.200"} bg="lightgray" _dark={{bg: "lightdark1", borderColor: "lightdark2"}}>
                 {blog.category}
               </Badge>
               {blog.subCategory.map((category) => (
-                <Badge borderRadius='full' px={3} py={1} mr={2} mb={2} bg="#F1F2F6" _dark={{ bg: "whiteAlpha.200" }} >
+                <Badge borderRadius='full' px={3} py={1} mr={2} mb={2} bg="lightgray" border="1px" borderColor="gray.200" _dark={{ bg: "lightdark1", borderColor: "lightdark2" }} >
                   {category}
                 </Badge>
               ))}
