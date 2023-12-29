@@ -20,6 +20,12 @@ import NavBar from './nav/Navbar';
 import LatestBlog from "./blog/LatestBlog"
 
 export default function Home() {
+  const profile = {
+    name: "Elvira Firmansyah",
+    pronouns: "she" | "her",
+    nationality: "Indonesia",
+    site: "https://elvira.vercel.app"
+  }
   const infoLinks = [
     {
       name: "github",
@@ -49,6 +55,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
+      
       <Container maxW={"6xl"}>
         <Flex
           direction={["column", "column", "row", "row"]}
@@ -63,6 +70,7 @@ export default function Home() {
             direction={"column"}
             color={useColorModeValue("gray.700", "white")}
           >
+            
             <Box>
               <Heading
                 size='xl'

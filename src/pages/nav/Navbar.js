@@ -78,7 +78,7 @@ const MenuLinks = ({ isOpen, ...props }) => {
       color={useColorModeValue('black', "white")}
       >
         <Box
-          _hover={useColorModeValue({ bg: "lightgray" }, { bg: "whiteAlpha.200" })}
+          _hover={useColorModeValue({ bg: "lightgray" }, { bg: "lightdark1" })}
           px={4}
           py={2}
           rounded="lg"
@@ -86,7 +86,7 @@ const MenuLinks = ({ isOpen, ...props }) => {
           <Link to="/" {...props}> Home</Link>
         </Box>
         <Box
-          _hover={useColorModeValue({ bg: "lightgray" }, { bg: "whiteAlpha.200" })}
+          _hover={useColorModeValue({ bg: "lightgray" }, { bg: "lightdark1" })}
           px={4}
           py={2}
           rounded="lg"
@@ -94,7 +94,7 @@ const MenuLinks = ({ isOpen, ...props }) => {
           <Link to="about" {...props}>About</Link>
         </Box>
         <Box
-          _hover={useColorModeValue({ bg: "lightgray" }, { bg: "whiteAlpha.200" })}
+          _hover={useColorModeValue({ bg: "lightgray" }, { bg: "lightdark1" })}
           px={4}
           py={2}
           rounded="lg"
@@ -102,7 +102,7 @@ const MenuLinks = ({ isOpen, ...props }) => {
           <Link to="projects" {...props}>Projects</Link>
         </Box>
         <Box
-          _hover={useColorModeValue({ bg: "lightgray" }, { bg: "whiteAlpha.200" })}
+          _hover={useColorModeValue({ bg: "lightgray" }, { bg: "lightdark1" })}
           px={4}
           py={2}
           rounded="lg"
@@ -110,7 +110,7 @@ const MenuLinks = ({ isOpen, ...props }) => {
           <Link to="blog" {...props}>Blog</Link>
         </Box>
         <Box
-          _hover={useColorModeValue({ bg: "lightgray" }, { bg: "whiteAlpha.200" })}
+          _hover={useColorModeValue({ bg: "lightgray" }, { bg: "lightdark1" })}
           px={4}
           py={2}
           rounded="lg"
