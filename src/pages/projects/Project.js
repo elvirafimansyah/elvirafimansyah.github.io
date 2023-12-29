@@ -33,7 +33,7 @@ const ProjectContent = () => {
         status="Dribbble"
         dp="A few highlights of my open-source projects. View them all on"
       />
-      <TabItem mb={["0", "20"]} />
+      <TabItem  />
     </>
   )
 }

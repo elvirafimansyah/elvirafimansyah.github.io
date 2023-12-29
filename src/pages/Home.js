@@ -17,6 +17,7 @@ import {
 import Contact from './Contact';
 import { ProjectContent } from './projects/Project';
 import NavBar from './nav/Navbar';
+import LatestBlog from "./blog/LatestBlog"
 
 export default function Home() {
   const infoLinks = [
@@ -53,14 +54,13 @@ export default function Home() {
           direction={["column", "column", "row", "row"]}
           justifyContent={["center", "space-around"]}
           alignItems={"center"}
-          h={"100vh"}
         >
           <Stack
-            mt={["20", "24", "10", "10"]}
+            mt={["28", "28", "40", "40"]}
+            mb={[2, 3, 40]}
             display="inline"
             spacing={5}
             direction={"column"}
-            mb={[0, 10, 40]}
             color={useColorModeValue("gray.700", "white")}
           >
             <Box>
@@ -138,9 +138,11 @@ export default function Home() {
             <Image
               boxSize={300}
               src={process.env.PUBLIC_URL + 'assets/img/techgirl.png'}
-              mt={[7, 1, -36]}
+              mt={[0, 0, -10, -10]}
             />
         </Flex>
+
+        <LatestBlog />
         <Hide breakpoint='(min-width: 700px)' >
           <ProjectContent />
           <Contact />

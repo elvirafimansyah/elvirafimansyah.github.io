@@ -38,8 +38,8 @@ const Contact = () => {
             flex="1"
             mb={[5, 5, 0]}
           >
-            <VStack spacing={1} alignItems={["center", "center", "flex-start"]} color="white" w="full" h="full">
-              <VStack alignItems={["center", "center", "flex-start"]} >
+            <VStack spacing={1} alignItems={["flex-start"]} color="white" w="full" h="full">
+              <VStack alignItems={["flex-start"]} >
                 <Text fontSize="2xl" fontWeight="bold" color={"turquo"} >Contact Information</Text>
                 <Text fontSize={"md"} color={useColorModeValue("gray.700", "gray.300")} >Our friendly team would have to hear from you</Text>
                 <Divider />

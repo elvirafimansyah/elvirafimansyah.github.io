@@ -14,7 +14,7 @@ const BlogList = ({ blogs }) => {
       mb={[0, 30]}
     >
       {blogs.map((blog) => (
-        <BlogDesign blog={blog} />
+        <BlogDesign blog={blog} type="blog" />
       ))}
     </Stack>
   )

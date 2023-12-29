@@ -20,9 +20,7 @@ const BlogDesign = ({
     authorAvatar,
     createdAt,
     cover,
-    estimated
-  }
-}) => {
+    estimated}, type}) => {
   return (
     <Box maxW='full' borderWidth='1px' borderRadius='lg' overflow='hidden' key={id} >
       <Box p='6' >
@@ -41,7 +39,7 @@ const BlogDesign = ({
           _hover={{ textDecoration: "underline", textDecorationColor: "turquo", textUnderlineOffset: 3 }}
         >
           <Link 
-            to={`${id}`}
+            to={type === "blog" ? `${id}` : `/blog/${id}`}
           >
             {title}
           </Link>

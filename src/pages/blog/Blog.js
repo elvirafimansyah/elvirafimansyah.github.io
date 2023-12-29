@@ -7,10 +7,7 @@ import BlogList from "./BlogList";
 import BlogEmpty from "./Empty";
 
 import {
-  Box,
   Divider,
-  VStack,
-  useColorModeValue,
 } from "@chakra-ui/react"
 
 export default function Blog() {

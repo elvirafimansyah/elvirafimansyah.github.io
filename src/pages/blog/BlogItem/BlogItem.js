@@ -18,6 +18,7 @@ import { Link } from "react-router-dom";
 
 export default function BlogItem() {
   const { id } = useParams();
+  
   const [blog, setBlog] = useState(null);
 
   useEffect(function () {
@@ -27,17 +28,7 @@ export default function BlogItem() {
       setBlog(blog)
     }
   }, [id,blog]);
-  /* Structure
-  - category
-  - title
-  - author and author avatar
-  - date
-  - picture
-  - content
 
-  - author profile
-  
-  */
   return (
     <>
       <Container maxW="container.md" py={20} >

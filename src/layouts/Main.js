@@ -7,7 +7,7 @@ const Main = ({children}) => {
     }, []);
   return(
     <>
-      <Container maxW="6xl" py={20} >
+      <Container maxW="6xl" pt={20} >
         {children}
       </Container>
     </>

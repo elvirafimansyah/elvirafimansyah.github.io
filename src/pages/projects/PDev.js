@@ -7,14 +7,12 @@ import {
   chakra,
   Stack,
   Button,
-  useColorMode
 } from "@chakra-ui/react";
 
 import { projectsList } from "./PData";
 import Category from "../../components/category";
 
 export default function Dev() {
-  const { colorMode } = useColorMode()
   const [repos, setRepos] = useState([])
 
   useEffect(() => {

@@ -25,5 +25,5 @@ export const blogData = [
     cover: '/assets/upload/art1/cover1.png',
     sourceImg: ["https://fastwork.id/", "", "https://www.webintoapp.com/", "https://www.webintoapp.com/app-maker", "https://www.webintoapp.com/app-maker", "https://www.webintoapp.com/app-maker", "webintoapp.com/app-maker", "https://www.webintoapp.com/author/dashboard"],
     subImg: ["", "/assets/upload/art1/sub1.png", "/assets/upload/art1/sub2.png", "/assets/upload/art1/sub3.png", "/assets/upload/art1/sub4.png", "/assets/upload/art1/sub5.png", "/assets/upload/art1/sub6.png", "", "", ""]
-  },
+  }
 ]

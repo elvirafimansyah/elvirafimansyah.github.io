@@ -39,10 +39,6 @@ export default function Footer() {
   return (
     <Box
       color={useColorModeValue('gray.900', 'gray.200')}
-      pos={{md:  "absolute"}}
-      bottom={["-18", "0", "0"]}
-      left="0"
-      width="full"
     >
       <Container
         as={Stack}

@@ -96,7 +96,6 @@ const Skills = () => {
     <>
     <Box
       pt={4}
-      pb={[3,3, 36,36]}
     >
       <Text fontSize={"2xl"} pb={2}fontWeight="650" color={"turquo"}>Skills</Text>
       <Box>
