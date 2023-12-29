@@ -3,7 +3,7 @@ const projectsList = [
     name: 'Emortfy',
     slug: 'emortfy',
     tagline: '📈 A list of spotify chart, such as top artists, top albums, etc  ',
-    url: 'http://emorenotes.vercel.app/',
+    url: 'http://emortfy.vercel.app/',
     category: "web development",
     type: "React JS",
     img: process.env.PUBLIC_URL + 'assets/img/emortfy.png'
@@ -27,15 +27,6 @@ const projectsList = [
     img: process.env.PUBLIC_URL + 'assets/img/dashboard.png'
   },
   {
-    name: 'Newdev',
-    slug: 'news-id',
-    tagline: '📰 An online news site in Indonesia for the web',
-    url: "https://newsid.vercel.app/",
-    category: "web development",
-    type: "JavaScript",
-    img: process.env.PUBLIC_URL + 'assets/img/news.png'
-  },
-  {
     name: 'Covid Tracker',
     slug: 'covid-app',
     tagline: '📊 A free, open source covid app for the web',
@@ -43,6 +34,15 @@ const projectsList = [
     category: "web development",
     type: "JavaScript",
     img: process.env.PUBLIC_URL + 'assets/img/covid.png'
+  },
+  {
+    name: 'Portfolio V2',
+    slug: 'elvirafimansyah.github.io',
+    tagline: '⚡️ My personal website built with React.js, Chakra UI, and Vercel.',
+    url: 'https://elvira.vercel.app/',
+    category: "web development",
+    type: "react js",
+    img: process.env.PUBLIC_URL + 'assets/img/portfolio.png'
   },
   {
     name: 'Engxzu',
@@ -60,7 +60,7 @@ const projectsList = [
     url: 'https://quizemore.vercel.app/',
     category: "web development",
     type: "javascript",
-    img: process.env.PUBLIC_URL + 'assets/img/quiz.png'
+    img: process.env.PUBLIC_URL + 'assets/img/emorequiz.png'
   },
   
 ]
