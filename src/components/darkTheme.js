@@ -1,4 +1,4 @@
-import { extendTheme } from '@chakra-ui/react'
+import { theme as DefaultTheme, extendTheme } from '@chakra-ui/react'
 import '@fontsource-variable/inter';
 
 // 2. Add your color mode config
@@ -11,8 +11,8 @@ const config = {
 const darkTheme = extendTheme({ 
   config,
   fonts: {
-    body: "Inter",
-    heading: "Inter"
+    body: `'Inter', ${DefaultTheme.fonts.heading}`,
+    heading: `'Inter', ${DefaultTheme.fonts.body}`
   },
   colors: {
     twhite: "#cbd5e1",
