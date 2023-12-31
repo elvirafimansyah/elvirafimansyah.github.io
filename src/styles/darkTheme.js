@@ -1,5 +1,5 @@
 import { theme as DefaultTheme, extendTheme } from '@chakra-ui/react'
-import '@fontsource-variable/inter';
+import '@fontsource/inter';
 
 // 2. Add your color mode config
 const config = {
