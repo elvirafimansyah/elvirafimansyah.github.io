@@ -14,7 +14,7 @@ const Title = (props) => {
       textAlign={"center"}
       justifyContent="center"
     >
-      <Heading color={"turquo"}>{props.title}</Heading>
+      <Heading color={"turquo"} fontWeight={"extrabold"}>{props.title}</Heading>
       <Text color={useColorModeValue("gray.600", "gray.400")}  fontSize={"lg"} pb="5"> 
         {props.dp} <a href={props.url1} target={"blank"}><chakra.span color={useColorModeValue("black", "white")} _hover={{ textDecoration: "underline", textDecorationColor: "turquo", textDecorationThickness: "2px", textUnderlineOffset: 5 }}> {props.status1}</chakra.span></a>
         {props.status2 ? " and " : ''}

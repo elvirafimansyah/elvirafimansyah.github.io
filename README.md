@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="public/assets/img/logo.png" alt="Logo" width="80" height="80" style="border-radius: 10px">
+    <img src="public/logo.ico" alt="Logo" width="80" height="80" style="border-radius: 10px">
   </a>
 
   <h3 align="center">elvirafimansyah.github.io</h3>
@@ -21,7 +21,7 @@
 </div>
 
 <!-- ABOUT THE PROJECT -->
-<img src="./public/assets/img/banner.png" alt="Logo" >
+<img src="./public/assets/img/portfolio.png" alt="Logo" >
 
 ### Built With
 
@@ -57,7 +57,7 @@ Distributed under the MIT License. See [MIT LICENSE](LICENSE) for more informati
 <!-- CONTACT -->
 ## Contact
 
-Elvira Firmansyah - [@virn_el](https://instagram.com/virn_el) - freddyfirmansyah25@gmail.com
+Elvira Firmansyah - [@virn_el](https://instagram.com/virn_el) - elvirafirmansyah@gmail.com
 
 Portfolio: [Elvira Firmansyah](https://elvirafimansyah.github.io)
 
