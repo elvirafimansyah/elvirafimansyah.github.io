@@ -82,6 +82,7 @@ const MenuLinks = ({ isOpen, ...props }) => {
           px={4}
           py={2}
           rounded="lg"
+          fontWeight={"medium"}
         >
           <Link to="/" {...props}> Home</Link>
         </Box>
@@ -90,6 +91,7 @@ const MenuLinks = ({ isOpen, ...props }) => {
           px={4}
           py={2}
           rounded="lg"
+          fontWeight={"medium"}
         >
           <Link to="about" {...props}>About</Link>
         </Box>
@@ -98,6 +100,7 @@ const MenuLinks = ({ isOpen, ...props }) => {
           px={4}
           py={2}
           rounded="lg"
+          fontWeight={"medium"}
         >
           <Link to="projects" {...props}>Projects</Link>
         </Box>
@@ -106,6 +109,7 @@ const MenuLinks = ({ isOpen, ...props }) => {
           px={4}
           py={2}
           rounded="lg"
+          fontWeight={"medium"}
         >
           <Link to="blog" {...props}>Blog</Link>
         </Box>
@@ -114,6 +118,7 @@ const MenuLinks = ({ isOpen, ...props }) => {
           px={4}
           py={2}
           rounded="lg"
+          fontWeight={"medium"}
         >
           <Link to="contact" {...props}>Contact</Link>
         </Box>
