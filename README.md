@@ -21,7 +21,7 @@
 </div>
 
 <!-- ABOUT THE PROJECT -->
-<img src="./public/assets/img/portfolio.png" alt="Logo" >
+<img src="/public/assets/img/preview.png" alt="Gambar" >
 
 ### Built With
 
