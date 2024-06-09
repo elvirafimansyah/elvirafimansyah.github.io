@@ -18,6 +18,15 @@ const projectsList = [
     img: process.env.PUBLIC_URL + 'assets/img/emorenotes.png'
   },
   {
+    name: 'Covore',
+    slug: 'covore',
+    tagline: '📊 Covore is covid tracker app that built with Next.js & Shadcn UI',
+    url: 'https://covore.vercel.app/',
+    category: "web development",
+    type: "nextjs",
+    img: process.env.PUBLIC_URL + 'assets/img/covore.png'
+  },
+  {
     name: 'Weather App',
     slug: 'Apweather-react',
     tagline: '⛅ A weather forecast checker app for the web ',
