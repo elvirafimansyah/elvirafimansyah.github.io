@@ -29,7 +29,9 @@ const darkTheme = extendTheme({
       bootstrap: "#7711F6",
       react: "#61DAFB",
       github: "#1B1F23",
-      git: "#E94E31"
+      git: "#E94E31",
+      laravel: "#F13D30",
+      php: "#7A86B8",
     },
     lightgray: "#F1F2F6",
     lightgray2: "#d0d1d6"

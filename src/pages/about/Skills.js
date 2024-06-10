@@ -29,6 +29,23 @@ const Skills = () => {
       icon: <i class="fa-brands fa-js"></i>,
       color: "language.js",
     },
+    {
+      name: "PHP",
+      icon: <i class="fa-brands fa-php"></i>,
+      color: "language.php",
+    },
+  ]
+  const languages_img = [
+    {
+      name: "Kotlin",
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/600px-Kotlin_Icon.png?20210501145042",
+      url: "https://kotlinlang.org/"
+    },
+    {
+      name: "C#",
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/C_Sharp_Logo_2023.svg/205px-C_Sharp_Logo_2023.svg.png",
+      url: "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+    },
   ]
   const libraies = [
     {
@@ -36,10 +53,10 @@ const Skills = () => {
       icon: <i class="fa-brands fa-react"></i>,
       color: "language.react",
       url: "https://reactjs.org/"
-    }
-    
+    },
   ]
   const libraies_img = [
+   
     {
       name: "Styled-Components",
       img: "https://styled-components.com/atom.png",
@@ -58,12 +75,23 @@ const Skills = () => {
       color: "language.bootstrap",
       url:"https://getbootstrap.com/"
     },
+    {
+      name: "Laravel",
+      icon: <i class="fa-brands fa-laravel"></i>,
+      color: "language.laravel",
+      url: "https://laravel.com/"
+    },
   ]
   const framework_img = [
     {
       name: "Tailwind",
       img: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
       url:"https://tailwindcss.com/"
+    },
+    {
+      name: "Next.js",
+      img: "/assets/icon/nextjs.png",
+      url: "https://nextjs.org/"
     },
   ]
   const tools = [
@@ -113,6 +141,13 @@ const Skills = () => {
               url={item.url}
               icon={item.icon}
               color={item.color}
+              name={item.name}
+            />
+          ))}
+          {languages_img.map((item) => (
+            <SGButton 
+              url={item.url}
+              img={item.img}
               name={item.name}
             />
           ))}
