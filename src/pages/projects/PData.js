@@ -29,7 +29,7 @@ const projectsList = [
   {
     name: 'AstroMart',
     slug: 'astromart',
-    tagline: '📦 Inventory management system desktop application built by csharp',
+    tagline: '📦 Inventory management system desktop application built with csharp',
     category: "desktop development",
     type: "c#",
     img: process.env.PUBLIC_URL + 'assets/img/astromart.png'
