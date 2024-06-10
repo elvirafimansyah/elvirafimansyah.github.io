@@ -1,5 +1,14 @@
 const projectsList = [
   {
+    name: 'Covore',
+    slug: 'covore',
+    tagline: '📊 Covore is covid tracker app that built with Next.js & Shadcn UI',
+    url: 'https://covore.vercel.app/',
+    category: "web development",
+    type: "next js",
+    img: process.env.PUBLIC_URL + 'assets/img/covore.png'
+  },
+  {
     name: 'Emortfy',
     slug: 'emortfy',
     tagline: '📈 A list of spotify chart, such as top artists, top albums, etc  ',
@@ -18,13 +27,12 @@ const projectsList = [
     img: process.env.PUBLIC_URL + 'assets/img/emorenotes.png'
   },
   {
-    name: 'Covore',
-    slug: 'covore',
-    tagline: '📊 Covore is covid tracker app that built with Next.js & Shadcn UI',
-    url: 'https://covore.vercel.app/',
-    category: "web development",
-    type: "nextjs",
-    img: process.env.PUBLIC_URL + 'assets/img/covore.png'
+    name: 'AstroMart',
+    slug: 'astromart',
+    tagline: '📦 Inventory management system desktop application built by csharp',
+    category: "desktop development",
+    type: "c#",
+    img: process.env.PUBLIC_URL + 'assets/img/astromart.png'
   },
   {
     name: 'Weather App',
@@ -34,15 +42,6 @@ const projectsList = [
     category: "web development",
     type: "react js",
     img: process.env.PUBLIC_URL + 'assets/img/dashboard.png'
-  },
-  {
-    name: 'Covid Tracker',
-    slug: 'covid-app',
-    tagline: '📊 A free, open source covid app for the web',
-    url: 'https://kovidapp.netlify.app/',
-    category: "web development",
-    type: "JavaScript",
-    img: process.env.PUBLIC_URL + 'assets/img/covid.png'
   },
   {
     name: 'Portfolio V2',
