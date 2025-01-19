@@ -2,11 +2,14 @@
   "name": "nextjs",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://elvirafimansyah.github.io/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -25,6 +28,7 @@
     "embla-carousel-autoplay": "^8.0.0-rc21",
     "embla-carousel-react": "^8.0.0-rc21",
     "fs": "^0.0.1-security",
+    "gh-pages": "^6.3.0",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.316.0",
     "markdown-it": "^14.1.0",
