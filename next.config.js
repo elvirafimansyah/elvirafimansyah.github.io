@@ -8,7 +8,7 @@ const nextConfig = {
       "cdn.dribbble.com"
     ]
   },
-  
+  distDir: 'build',
 }
 
 module.exports = nextConfig
