@@ -1,65 +1,36 @@
-<div id="top"></div>
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-<!-- PROJECT LOGO -->
-<div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="public/logo.ico" alt="Logo" width="80" height="80" style="border-radius: 10px">
-  </a>
+## Getting Started
 
-  <h3 align="center">elvirafimansyah.github.io</h3>
+First, run the development server:
 
-  <p align="center">
-    Web Developer & UI/UX Designer
-    <br />
-    <br />
-    <a href="https://elvirafimansyah.github.io" target="_blank">View Demo</a>
-    ·
-    <a href="https://github.com/elvirafimansyah/elvirafimansyah.github.io/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/elvirafimansyah/elvirafimansyah.github.io/issues">Request Feature</a>
-  </p>
-</div>
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-<!-- ABOUT THE PROJECT -->
-<img src="/public/assets/img/preview.png" alt="Gambar" >
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Built With
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-* [React.js](https://reactjs.org/)
-* [Chakra UI](https://chakra-ui.com/)
-* [Google Fonts](https://fonts.google.com)
-* [Font Awesome](https://fontawesome.com/)
-* [Github Pages](https://pages.github.com)
-* [Vercel](https://vercel.com/)
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Learn More
 
-### Running Locally
-1. Clone the repo
-   ```sh
-   git clone https://github.com/elvirafimansyah/elvirafimansyah.github.io.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-2. ```sh
-   npm run start
-   ```
-3. Navigate to http://localhost:3000.
+To learn more about Next.js, take a look at the following resources:
 
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-<!-- LICENSE -->
-## License
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-Distributed under the MIT License. See [MIT LICENSE](LICENSE) for more information.
+## Deploy on Vercel
 
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-<!-- CONTACT -->
-## Contact
-
-Elvira Firmansyah - [@virn_el](https://instagram.com/virn_el) - elvirafirmansyah@gmail.com
-
-Portfolio: [Elvira Firmansyah](https://elvirafimansyah.github.io)
-
-<p align="right"><a href="#top">🔝</a></p>
-
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

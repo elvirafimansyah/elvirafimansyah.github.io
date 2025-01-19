@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+.tab-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+/* Handle */
+.tab-container::-webkit-scrollbar-thumb {
+  background: hsl(var(--scroll));
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.tab-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* .carousel-btn {
+  background-color: var(--carousel);
+} */
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* background putih */
+    --second-background: 210 40% 96.1%;
+    --foreground: 210 11% 4%; /* hitam */
+    --card: 210 40% 96.1%;
+    --card-foreground: 222.2 84% 4.9%;
+    --card2: 0, 100%, 100%;
+    --hovercard1: 208, 25%, 98%;
+    --hovercard2: 210°, 10%, 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 173, 80%, 40%; /* main green */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 157, 100%, 97%; /* pastel green */
+    --secondary-foreground: 158, 84%, 30%;  /* dark green */
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%; /* lightgraybg */
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0, 73%, 94%;
+    --destructive-foreground: 0 62.8% 30.6%;
+    --yellow: 58, 97%, 87%;
+    --yellow-foreground: 51, 100%, 40%;
+    --tab: 0 0% 100%;
+    --carousel: rgba(241, 245, 249, 0.8);
+    --border: 0 0% 87%; 
+    --border2: #DFDFDF;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 10px;
+    --desc: 215 19% 35%; 
+    --pastel: 171, 54%, 97%; /* light pastel */
+    --viapastel: 170, 52%, 92%; /* medium pastel */
+    --medium-pastel: 169, 100%, 91%; /* dark pastel */
+    --scroll: 210 40% 96.1%;
+    --nav: #08090a08;
+    --soft: #f1f5f9;
+    --bordersoft: #dedede;
+    --hoversoft: #f7f9fadf;
+    --hoversoft2: #f7f9fadf;
+  }
+
+  .dark {
+    --background: 210 11%, 4%; /* background hitam */
+    --second-background: 210, 6%, 6%;
+    --foreground: 0 0% 100%; /* putih */
+    --card: 0, 0%, 9%; /* lightdark1 */
+    --card-foreground: 210 40% 98%;
+    --card2: 0, 0%, 13%; /* lightdark2 */
+    --hovercard1: 0, 0%, 13%;
+    --hovercard2: 0, 0%, 16%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%; 
+    --primary: 173, 80%, 40%; /* main green */
+    --primary-foreground: 210 11.11% 3.53%;
+    --secondary: 161, 100%, 7%;
+    --secondary-foreground: 158, 88%, 44%;
+    --muted: 217.2 32.6% 17.5%; /* light gray */
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 210, 5%, 7%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0, 100%, 13%;
+    --destructive-foreground: 0, 73%, 94%;
+    --yellow: 55, 100%, 9%;
+    --yellow-foreground: 51, 100%, 82%;
+    --tab: 0 0% 100%;
+    --carousel: rgba(32, 32, 32, 0.8);
+    --border: 0, 0%, 13%;
+    --border2: #383838; /* stroke_dark2 */
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+    --desc: 215 20% 65%;
+    --pastel:  172 94% 6%; /* superdark green */
+    --viapastel: 174, 78%, 5%;  /* medium hitam */
+    --medium-pastel: 210 11%, 4%; /* hitam */
+    --scroll: 210, 4%, 9%;
+    --nav: #ffffff08;
+    --soft: #ffffff08;
+    --bordersoft: #ffffff08;
+    --hoversoft: #ffffff10;
+    --hoversoft2: #ffffff12;
+  }
+}
+@font-face {
+  font-family: 'Inter';
+  src: url(../public/fonts/InterVariable.ttf);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
